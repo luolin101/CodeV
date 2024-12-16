@@ -129,8 +129,8 @@ def user_message_step1():
             {
                 "type": "video",
                 "video": [
-                    "file:///gemini/platform/public/users/linhao/video/video1.mp4",
-                    "file:///gemini/platform/public/users/linhao/video/video2.mp4",
+                    "file:video/video1.mp4",
+                    "file:video/video2.mp4",
                 ],
                 "fps": 1.0,
             }
