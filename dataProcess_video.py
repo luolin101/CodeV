@@ -202,7 +202,7 @@ def step2(data_file):
         index = 1
         for problem in data["problem_statement"]:
             if problem.startswith('http'):
-                problem_list.append(f"file:///gemini/platform/public/users/linhao/video/video{index}.mp4")
+                problem_list.append(f"file:video/video{index}.mp4")
                 video_list.append(1)
                 index += 1
             else:
@@ -250,7 +250,7 @@ def step3(data_file):
         index = 1
         for problem in data["problem_statement"]:
             if problem.startswith('http'):
-                problem_list.append(f"file:///gemini/platform/public/users/linhao/video/video{index}.mp4")
+                problem_list.append(f"file:video/video{index}.mp4")
                 video_list.append(1)
                 index += 1
             else:
