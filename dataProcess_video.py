@@ -1,7 +1,6 @@
 import base64
 import json
 import re
-
 from openai import OpenAI
 from tqdm import tqdm
 
@@ -218,20 +217,15 @@ def step2(data_file):
             seed=42
         )
         input_str = completion.choices[0].message.content
-        # print(instance_id,f"success,input_str=" + input_str)
         try:
-            # 使用正则表达式匹配 JSON 结构
             json_matches = re.findall(r'\{[^{}]*\}', input_str)
-            # 将提取到的 JSON 字符串转换为 Python 字典，并存入列表
             description_list = [json.loads(json_str) for json_str in json_matches]
             save_data_list.append({
                 "instance_id": instance_id,
                 "description_list": description_list
             })
         except json.decoder.JSONDecodeError as e:
-            # 如果解析失败，捕获JSONDecodeError异常并处理
             print(instance_id, f"error,input_str=" + input_str)
-            # 你可以选择在这里记录错误、跳过当前字符串或采取其他措施
 
     with open("step2_video.json", 'w', encoding='utf-8') as outfile:
         json.dump(save_data_list, outfile, ensure_ascii=False, indent=4)
@@ -259,16 +253,12 @@ def step3(data_file):
 
         message1 = system_message(SystemPrompt_step3)
         message2 = user_message_step2(problem_list, video_list)
-        # print(message2)
         completion = client.chat.completions.create(
             model="/gemini/platform/public/llm/huggingface/Qwen/Qwen2-VL-72B-Instruct",
-            messages=[message1, message2],
-            #temperature = 0.3,
-            # seed = 42
+            messages=[message1, message2]
         )
 
         input_str = completion.choices[0].message.content
-        # print(instance_id, "success,inputstr=" + input_str)
         try:
             structure_problem = json.loads(input_str.strip().split('\n', 1)[1].rsplit('```', 1)[0].strip())
             save_data_list.append({
@@ -283,6 +273,5 @@ def step3(data_file):
 
 if __name__ == '__main__':
     step1()
-    step2('origin_data.json')
-    step3('origin_data.json')
-    #step2("test.json")
+    step2('multi_data_onlyvideo.json')
+    step3('multi_data_onlyvideo.json')
