@@ -163,7 +163,7 @@ def user_message_step2(problem_list, video_list):
 
 client = OpenAI(
     base_url="http://localhost:8000/v1",
-    api_key="token-abc123",  # 随便填写，只是为了通过接口参数校验
+    api_key="token-abc123",
 )
 
 
