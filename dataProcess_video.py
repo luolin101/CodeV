@@ -65,10 +65,15 @@ For each video, analyze:
     - How does this video strengthen the overall issue documentation?
     - What critical details should developers focus on when reviewing this video?
 
-Provide your analysis in this JSON format: { "videos": [ { "video_id": "<sequential number>", "analysis": 
-"<comprehensive analysis covering the video's connection to the issue, its technical value, and documentation 
-importance. Focus on explaining why this video matters for understanding and resolving the specific issue at hand. 
-Include relevant technical details and their significance to the issue context.>" } ] }
+Provide your analysis in this JSON format: 
+{ 
+    "videos": [ 
+        { 
+            "video_id": "<sequential number>", 
+            "analysis": "<comprehensive analysis covering the video's connection to the issue, its technical value, and documentation importance. Focus on explaining why this video matters for understanding and resolving the specific issue at hand. Include relevant technical details and their significance to the issue context.>" 
+        } 
+    ] 
+}
 
 Key Guidelines:
 - Create a narrative that clearly connects the video to the issue context.
@@ -80,7 +85,7 @@ Key Guidelines:
 
 SystemPrompt_step3 = '''   You are an issue organizer and analyzer. The user will provide you with an issue that includes text descriptions and videos. Your task is to analyze this information thoroughly and output a structured summary of the issue in JSON format.
 
-   The output should include relevant elements as applicable, but you are not required to fill in every field if the information is not available or cannot be accurately summarized. Aim to include:
+The output should include relevant elements as applicable, but you are not required to fill in every field if the information is not available or cannot be accurately summarized. Aim to include:
 
 ```json
    {
@@ -102,12 +107,6 @@ SystemPrompt_step3 = '''   You are an issue organizer and analyzer. The user wil
 Feel free to omit any fields that are not applicable or where information is uncertain, while ensuring the output remains clear and informative to assist other models in understanding and resolving the issue effectively.
 '''
 
-
-def encode_image(image_path):
-    with open(image_path, "rb") as image_file:
-        return base64.b64encode(image_file.read()).decode('utf-8')
-
-
 def system_message(text):
     message = {
         "role": "system",
@@ -121,15 +120,14 @@ def system_message(text):
     return message
 
 
-def user_message_step1():
+def user_message_step1(video_path):
     message = {
         "role": "user",
         "content": [
             {
                 "type": "video",
                 "video": [
-                    "file:video/video1.mp4",
-                    "file:video/video2.mp4",
+                    f"file:///{video_path}",
                 ],
                 "fps": 1.0,
             }
@@ -149,7 +147,7 @@ def user_message_step2(problem_list, video_list):
         elif video_list[i] == 1:
             contents.append({
                 "type": "video",
-                "video": f"{problem_list[i]}",
+                "video": f"file:///{problem_list[i]}",
                 "fps": 1.0,
             })
         else:

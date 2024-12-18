@@ -1,8 +1,13 @@
+import argparse
 import base64
 import json
 import re
 from openai import OpenAI
 from tqdm import tqdm
+import os
+from dotenv import load_dotenv
+# 加载 `.env` 文件中的环境变量
+load_dotenv()
 
 SystemPrompt_step1_des = '''You are a technical image descriptor. For the given image:
 
@@ -190,13 +195,6 @@ def user_message_step3(problem_list, image_list):
     }
     return message
 
-
-client = OpenAI(
-    base_url="http://localhost:8000/v1",
-    api_key="token-abc123",
-)
-
-
 def filter_data(data_list, str_list):
     save_data = []
     for data in data_list:
@@ -216,9 +214,9 @@ def step1(data_file):
         for problem in data["problem_statement"]:
             if problem.startswith('http'):
                 message1 = system_message(SystemPrompt_step1_des)
-                message2 = user_message_step1(f"images/{instance_id}/Image{index}.png")
+                message2 = user_message_step1(f"Visual SWE-bench/Images/{instance_id}/Image{index}.png")
                 completion = client.chat.completions.create(
-                    model="/gemini/platform/public/llm/huggingface/Qwen/Qwen2-VL-2B-Instruct",
+                    model=model,
                     messages=[message1, message2],
                     temperature=0.2
                 )
@@ -230,7 +228,7 @@ def step1(data_file):
             "instance_id": instance_id,
             "raw_description_list": raw_description_list
         })
-    with open("output_qwen2vl2b/step1.json", 'w', encoding='utf-8') as outfile:
+    with open(f"{out_folder}/step1.json", 'w', encoding='utf-8') as outfile:
         json.dump(save_data_list, outfile, ensure_ascii=False, indent=4)
 
 
@@ -245,7 +243,7 @@ def step2(data_file, type="des"):
         index = 0
         for problem in data["problem_statement"]:
             if problem.startswith('http'):
-                problem_list.append(f"images/{instance_id}/Image{index}.png")
+                problem_list.append(f"Visual SWE-bench/Images/{instance_id}/Image{index}.png")
                 image_list.append(1)
                 index += 1
             else:
@@ -256,7 +254,7 @@ def step2(data_file, type="des"):
             message1 = system_message(SystemPrompt_step2_analysis)
         message2 = user_message_step2(problem_list, image_list)
         completion = client.chat.completions.create(
-            model="/gemini/platform/public/llm/huggingface/Qwen/Qwen2-VL-2B-Instruct",
+            model=model,
             messages=[message1, message2],
             temperature=0.3
         )
@@ -271,10 +269,10 @@ def step2(data_file, type="des"):
         except json.decoder.JSONDecodeError as e:
             print(instance_id, f"error,input_str=" + input_str)
     if type == "des":
-        with open(f"output_qwen2vl2b/step2_des.json", 'w', encoding='utf-8') as outfile:
+        with open(f"{out_folder}/step2_des.json", 'w', encoding='utf-8') as outfile:
             json.dump(save_data_list, outfile, ensure_ascii=False, indent=4)
     if type == "analysis":
-        with open(f"output_qwen2vl2b/step2_analysis.json", 'w', encoding='utf-8') as outfile:
+        with open(f"{out_folder}/step2_analysis.json", 'w', encoding='utf-8') as outfile:
             json.dump(save_data_list, outfile, ensure_ascii=False, indent=4)
 
 
@@ -289,7 +287,7 @@ def step3(data_file):
         index = 0
         for problem in data["problem_statement"]:
             if problem.startswith('http'):
-                problem_list.append(f"images/{instance_id}/Image{index}.png")
+                problem_list.append(f"Visual SWE-bench/Images/{instance_id}/Image{index}.png")
                 image_list.append(1)
                 index += 1
             else:
@@ -299,7 +297,7 @@ def step3(data_file):
         message1 = system_message(SystemPrompt_step3)
         message2 = user_message_step3(problem_list, image_list)
         completion = client.chat.completions.create(
-            model="/gemini/platform/public/llm/huggingface/Qwen/Qwen2-VL-2B-Instruct",
+            model=model,
             messages=[message1, message2]
         )
 
@@ -312,12 +310,23 @@ def step3(data_file):
             })
         except:
             print(instance_id, "error,input_str=" + input_str)
-    with open("output_qwen2vl2b/step3.json", 'w', encoding='utf-8') as outfile:
+    with open(f"{out_folder}/step3.json", 'w', encoding='utf-8') as outfile:
         json.dump(save_data_list, outfile, ensure_ascii=False, indent=4)
 
-
 if __name__ == '__main__':
-    step1('multi_data_onlyimage.json')
-    step2('multi_data_onlyimage.json', "des")
-    step2('multi_data_onlyimage.json', "analysis")
-    step3('multi_data_onlyimage.json')
+    base_url = os.getenv("base_url")
+    api_key = os.getenv("api_key")
+    model = os.getenv("model")
+    client = OpenAI(
+        base_url=base_url,
+        api_key=api_key
+    )
+    parser = argparse.ArgumentParser(description="Script configuration")
+    parser.add_argument("--out_folder", type=str, default=model, help="The output folder for results")
+    args = parser.parse_args()
+    out_folder = args.out_folder
+
+    step1('Visual SWE-bench/multi_data_onlyimage.json')
+    step2('Visual SWE-bench/multi_data_onlyimage.json', "des")
+    step2('Visual SWE-bench/multi_data_onlyimage.json', "analysis")
+    step3('Visual SWE-bench/multi_data_onlyimage.json')
