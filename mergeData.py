@@ -5,7 +5,7 @@ def merge(file1_path,file2_path):
         data1 = json.load(file1)
         data2 = json.load(file2)
     data1.extend(data2)
-    with open("data.json",'w',encoding='utf-8') as file:
+    with open("processed_data.json",'w',encoding='utf-8') as file:
         json.dump(data1, file, ensure_ascii=False, indent=4)
 
 
