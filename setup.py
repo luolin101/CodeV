@@ -27,6 +27,7 @@ setuptools.setup(
         'unidiff',
         'tqdm',
         'openai',
+        'python-dotenv',
     ],
     extras_require={
         'inference': [
