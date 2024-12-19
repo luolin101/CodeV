@@ -79,6 +79,7 @@ if __name__ == '__main__':
     parser.add_argument("--in_folder", type=str, help="The input folder for results")
     args = parser.parse_args()
     in_folder = args.in_folder
-    add_all_steps_with_analysis("Visual SWE-bench/multi_data_onlyvideo.json",f"{in_folder}/step1.json",f"{in_folder}/step2_des.json",f"{in_folder}/step2_analysis.json",f"{in_folder}/step3.json")
+    # add_all_steps_with_analysis("Visual SWE-bench/multi_data_onlyvideo.json",f"{in_folder}/step1.json",f"{in_folder}/step2_des.json",f"{in_folder}/step2_analysis.json",f"{in_folder}/step3.json")
+    add_all_steps_with_analysis("Test/multi_data_onlyvideo.json",f"{in_folder}/step1.json",f"{in_folder}/step2_des.json",f"{in_folder}/step2_analysis.json",f"{in_folder}/step3.json")
 
 

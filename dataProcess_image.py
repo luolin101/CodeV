@@ -326,7 +326,11 @@ if __name__ == '__main__':
     args = parser.parse_args()
     out_folder = args.out_folder
 
-    step1('Visual SWE-bench/multi_data_onlyimage.json')
-    step2('Visual SWE-bench/multi_data_onlyimage.json', "des")
-    step2('Visual SWE-bench/multi_data_onlyimage.json', "analysis")
-    step3('Visual SWE-bench/multi_data_onlyimage.json')
+    # step1('Visual SWE-bench/multi_data_onlyimage.json')
+    # step2('Visual SWE-bench/multi_data_onlyimage.json', "des")
+    # step2('Visual SWE-bench/multi_data_onlyimage.json', "analysis")
+    # step3('Visual SWE-bench/multi_data_onlyimage.json')
+    step1('Test/multi_data_onlyimage.json')
+    step2('Test/multi_data_onlyimage.json', "des")
+    step2('Test/multi_data_onlyimage.json', "analysis")
+    step3('Test/multi_data_onlyimage.json')
