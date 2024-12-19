@@ -1,8 +1,14 @@
+import argparse
 import base64
 import json
+import os
 import re
 from openai import OpenAI
 from tqdm import tqdm
+import os
+from dotenv import load_dotenv
+# load `.env`
+load_dotenv()
 
 SystemPrompt_step1 = '''You are a technical video descriptor. For the given video:
 
@@ -44,7 +50,7 @@ Please provide your descriptions in this specific JSON format:
 CRITICAL: Ensure you describe EVERY video present in the issue - missing any video would make the issue harder to understand for AI models that cannot see the images.
 '''
 
-SystemPrompt_step2 = '''You are a specialized technical video analyst for software issues. Your task is to analyze 
+SystemPrompt_step2_analysis = '''You are a specialized technical video analyst for software issues. Your task is to analyze 
 how each video connects to and supports the reported issue. Focus on providing a comprehensive analysis that explains 
 the video's role and value in the issue context.
 
@@ -158,61 +164,59 @@ def user_message_step2(problem_list, video_list):
     }
     return message
 
-
-client = OpenAI(
-    base_url="http://localhost:8000/v1",
-    api_key="token-abc123",
-)
-
-
-def step1():
-    save_data_list = []
-    instance_id = 'matplotlib__matplotlib-25631'
-    raw_description_list = []
-    message1 = system_message(SystemPrompt_step1)
-    message2 = user_message_step1()
-    completion = client.chat.completions.create(
-        model="/gemini/platform/public/llm/huggingface/Qwen/Qwen2-VL-72B-Instruct",
-        messages=[message1, message2],
-        temperature=0.2,
-        seed=42
-    )
-    raw_description_list.append(completion.choices[0].message.content)
-    save_data_list.append({
-        "instance_id": instance_id,
-        "raw_description_list": raw_description_list
-    })
-    with open("step1_video.json", 'w', encoding='utf-8') as outfile:
-        json.dump(save_data_list, outfile, ensure_ascii=False, indent=4)
-
-
-def step2(data_file):
+def step1(data_file):
     with open(data_file, "r") as f:
         data_list = json.load(f)
     save_data_list = []
     for data in tqdm(data_list):
-        if data["instance_id"] != "matplotlib__matplotlib-25631":
-            continue
+        raw_description_list = []
+        instance_id = data["instance_id"]
+        index = 0
+        for problem in data["problem_statement"]:
+            if problem.startswith('http'):
+                message1 = system_message(SystemPrompt_step1)
+                message2 = user_message_step1(f"Visual SWE-bench/Videos/{instance_id}/Video{index}.mp4")
+                completion = client.chat.completions.create(
+                    model=model,
+                    messages=[message1, message2],
+                    temperature=0.2
+                )
+                index += 1
+                raw_description_list.append(completion.choices[0].message.content)
+            else:
+                continue
+        save_data_list.append({
+            "instance_id": instance_id,
+            "raw_description_list": raw_description_list
+        })
+    with open(f"{out_folder}/step1.json", 'w', encoding='utf-8') as outfile:
+        json.dump(save_data_list, outfile, ensure_ascii=False, indent=4)
+
+def step2(data_file, type="des"):
+    with open(data_file, "r") as f:
+        data_list = json.load(f)
+    save_data_list = []
+    for data in tqdm(data_list):
         problem_list = []
         video_list = []
         instance_id = data["instance_id"]
-        index = 1
+        index = 0
         for problem in data["problem_statement"]:
             if problem.startswith('http'):
-                problem_list.append(f"file:video/video{index}.mp4")
+                problem_list.append(f"Visual SWE-bench/Videos/{instance_id}/Video{index}.mp4")
                 video_list.append(1)
                 index += 1
             else:
                 problem_list.append(problem)
                 video_list.append(0)
-
-        message1 = system_message(SystemPrompt_step2)
+        message1 = system_message(SystemPrompt_step2_des)
+        if type == "analysis":
+            message1 = system_message(SystemPrompt_step2_analysis)
         message2 = user_message_step2(problem_list, video_list)
         completion = client.chat.completions.create(
-            model="/gemini/platform/public/llm/huggingface/Qwen/Qwen2-VL-72B-Instruct",
+            model=model,
             messages=[message1, message2],
-            temperature=0.3,
-            seed=42
+            temperature=0.3
         )
         input_str = completion.choices[0].message.content
         try:
@@ -224,25 +228,25 @@ def step2(data_file):
             })
         except json.decoder.JSONDecodeError as e:
             print(instance_id, f"error,input_str=" + input_str)
-
-    with open("step2_video.json", 'w', encoding='utf-8') as outfile:
-        json.dump(save_data_list, outfile, ensure_ascii=False, indent=4)
-
+    if type == "des":
+        with open(f"{out_folder}/step2_des.json", 'w', encoding='utf-8') as outfile:
+            json.dump(save_data_list, outfile, ensure_ascii=False, indent=4)
+    if type == "analysis":
+        with open(f"{out_folder}/step2_analysis.json", 'w', encoding='utf-8') as outfile:
+            json.dump(save_data_list, outfile, ensure_ascii=False, indent=4)
 
 def step3(data_file):
     with open(data_file, "r") as f:
         data_list = json.load(f)
     save_data_list = []
     for data in tqdm(data_list):
-        if data["instance_id"] != "matplotlib__matplotlib-25631":
-            continue
         problem_list = []
         video_list = []
         instance_id = data["instance_id"]
-        index = 1
+        index = 0
         for problem in data["problem_statement"]:
             if problem.startswith('http'):
-                problem_list.append(f"file:video/video{index}.mp4")
+                problem_list.append(f"Visual SWE-bench/Videos/{instance_id}/Video{index}.mp4")
                 video_list.append(1)
                 index += 1
             else:
@@ -252,7 +256,7 @@ def step3(data_file):
         message1 = system_message(SystemPrompt_step3)
         message2 = user_message_step2(problem_list, video_list)
         completion = client.chat.completions.create(
-            model="/gemini/platform/public/llm/huggingface/Qwen/Qwen2-VL-72B-Instruct",
+            model=model,
             messages=[message1, message2]
         )
 
@@ -265,11 +269,22 @@ def step3(data_file):
             })
         except:
             print(instance_id, "error,input_str=" + input_str)
-    with open("step3_video.json", 'w', encoding='utf-8') as outfile:
+    with open(f"{out_folder}/step3.json", 'w', encoding='utf-8') as outfile:
         json.dump(save_data_list, outfile, ensure_ascii=False, indent=4)
 
-
 if __name__ == '__main__':
-    step1()
-    step2('multi_data_onlyvideo.json')
-    step3('multi_data_onlyvideo.json')
+    base_url = os.getenv("base_url")
+    api_key = os.getenv("api_key")
+    model = os.getenv("model")
+    client = OpenAI(
+        base_url=base_url,
+        api_key=api_key
+    )
+    parser = argparse.ArgumentParser(description="Script configuration")
+    parser.add_argument("--out_folder", type=str, default=model, help="The output folder for results")
+    args = parser.parse_args()
+    out_folder = args.out_folder
+    step1('Visual SWE-bench/multi_data_onlyvideo.json')
+    step2('Visual SWE-bench/multi_data_onlyvideo.json',"des")
+    step2('Visual SWE-bench/multi_data_onlyvideo.json',"analysis")
+    step3('Visual SWE-bench/multi_data_onlyvideo.json')

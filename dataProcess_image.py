@@ -6,7 +6,7 @@ from openai import OpenAI
 from tqdm import tqdm
 import os
 from dotenv import load_dotenv
-# 加载 `.env` 文件中的环境变量
+# load `.env`
 load_dotenv()
 
 SystemPrompt_step1_des = '''You are a technical image descriptor. For the given image:
