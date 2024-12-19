@@ -77,9 +77,10 @@ def add_all_steps_with_analysis(data_file_path,step1_file_path,step2_file_path,s
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Script configuration")
     parser.add_argument("--in_folder", type=str, help="The input folder for results")
+    parser.add_argument("--dataset", type=str, default="Visual SWE-bench/list_data_onlyvideo.json")
     args = parser.parse_args()
     in_folder = args.in_folder
-    # add_all_steps_with_analysis("Visual SWE-bench/multi_data_onlyvideo.json",f"{in_folder}/step1.json",f"{in_folder}/step2_des.json",f"{in_folder}/step2_analysis.json",f"{in_folder}/step3.json")
-    add_all_steps_with_analysis("Test/multi_data_onlyvideo.json",f"{in_folder}/step1.json",f"{in_folder}/step2_des.json",f"{in_folder}/step2_analysis.json",f"{in_folder}/step3.json")
+    dataset = args.dataset
+    add_all_steps_with_analysis(dataset,f"{in_folder}/step1.json",f"{in_folder}/step2_des.json",f"{in_folder}/step2_analysis.json",f"{in_folder}/step3.json")
 
 

@@ -3,6 +3,7 @@ import base64
 import json
 import re
 from openai import OpenAI
+from pyarrow.dataset import dataset
 from tqdm import tqdm
 import os
 from dotenv import load_dotenv
@@ -323,14 +324,12 @@ if __name__ == '__main__':
     )
     parser = argparse.ArgumentParser(description="Script configuration")
     parser.add_argument("--out_folder", type=str, default=model, help="The output folder for results")
+    parser.add_argument("--dataset", type=str, default="Visual SWE-bench/list_data_onlyimage.json")
     args = parser.parse_args()
     out_folder = args.out_folder
+    dataset = args.dataset
 
-    # step1('Visual SWE-bench/multi_data_onlyimage.json')
-    # step2('Visual SWE-bench/multi_data_onlyimage.json', "des")
-    # step2('Visual SWE-bench/multi_data_onlyimage.json', "analysis")
-    # step3('Visual SWE-bench/multi_data_onlyimage.json')
-    step1('Test/multi_data_onlyimage.json')
-    step2('Test/multi_data_onlyimage.json', "des")
-    step2('Test/multi_data_onlyimage.json', "analysis")
-    step3('Test/multi_data_onlyimage.json')
+    step1(dataset)
+    step2(dataset, "des")
+    step2(dataset, "analysis")
+    step3(dataset)
