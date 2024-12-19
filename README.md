@@ -25,6 +25,7 @@ python dataProcess_image.py --dataset "Visual SWE-bench/list_data_onlyimage.json
     --out_folder output_folder_iamge
 ```
 This will generate the processed image information under the `output_folder_image` directory.
+
 2.Process Video
 ```bash
 python dataProcess_video.py --dataset "Visual SWE-bench/list_data_onlyvideo.json" \
