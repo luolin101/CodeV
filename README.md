@@ -18,6 +18,11 @@ pip install -e .
 ```
 
 ## 💽 Usage
+### Model Set
+To configure the visual language model (VLM) used in this project, update the `.env` file with the following settings:
+- **`base_url`**: The base URL for the VLM API.
+- **`api_key`**: Your API key for authentication.
+- **`model`**: The specific model you intend to use.
 ### Data Process
 1.Process Image
 ```bash
@@ -33,7 +38,7 @@ python dataProcess_video.py --dataset "Visual SWE-bench/list_data_onlyvideo.json
 ```
 This will generate the processed video information under the `output_folder_video` directory. 
 
-Note: Given that the Visual Language Models (VLM) may not strictly follow the json format required by prompt when generating responses, and manual adjustment is needed.
+Note: Given that the VLM may not strictly follow the json format required by prompt when generating responses, and manual adjustment is needed.
 
 ### Patch Generation
 1.Add Image Information
