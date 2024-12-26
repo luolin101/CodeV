@@ -7,7 +7,7 @@ The dataset under the `Visual SWE-bench` directory:
 - `data.json`: Visual SWE-bench dataset following the [SWE-bench](https://huggingface.co/datasets/princeton-nlp/SWE-bench) structure.
 - `list_data.json`: Dataset where the `problem_statement` field is a list of strings, each representing a hyperlink to an image, video, or issue text.
 - `list_data_onlyimage.json`: A subset of `list_data.json`, where the `problem_statement` contains only visual data consisting of image hyperlinks.
-- `list_data_onlyvideo.json`："A subset of `list_data.json`, where the `problem_statement` contains only visual data consisting of video hyperlinks.
+- `list_data_onlyvideo.json`: A subset of `list_data.json`, where the `problem_statement` contains only visual data consisting of video hyperlinks.
 
 ## 🚀 Set Up
 To build CodeV from source, follow these steps:
