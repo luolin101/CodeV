@@ -1,0 +1,24 @@
+[
+    {
+        "instance_id": "matplotlib__matplotlib-25631",
+        "structure_problem": {
+            "problemSummary": "The `bbox_inches='tight'` parameter in `moviewriter.grab_frame()` causes a snowflake movie effect in the generated video.",
+            "context": "The issue occurs when using `bbox_inches='tight'` in the `grab_frame()` method of the `FFMpegWriter` class from matplotlib. Removing this parameter resolves the issue.",
+            "stepsToReproduce": [
+                "Import necessary libraries: matplotlib.pyplot, matplotlib.animation.FFMpegWriter, and numpy.",
+                "Create a figure and axis using `plt.subplots()`.",
+                "Set up the movie writer with `FFMpegWriter()`.",
+                "Define a line plot using `ax.plot([], [])`.",
+                "Set the x and y limits of the plot.",
+                "Iterate through a range of values, updating the line data and calling `moviewriter.grab_frame(bbox_inches='tight')`."
+            ],
+            "expectedResults": "The video should be generated without any visual artifacts.",
+            "actualResults": "The video contains a snowflake movie effect.",
+            "supplementaryImages": [
+                "https://user-images.githubusercontent.com/5205922/229658612-06326a41-eaeb-4bb5-8151-c04954eb8458.mp4",
+                "https://user-images.githubusercontent.com/5205922/229658664-691f81ae-4fa4-4613-9b8a-43657ff8b66d.mp4"
+            ],
+            "additionalNotes": "The issue is specific to Matplotlib version 3.7.1."
+        }
+    }
+]

@@ -1,0 +1,1453 @@
+[
+    {
+        "instance_id": "astropy__astropy-11693",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a plot with a grid overlay. The background is a dark purple color. The grid lines are white and form a series of curved lines that intersect at various points. The x-axis is labeled with values ranging from 500 to 2000, and the y-axis is labeled with values ranging from 500 to 1500. The grid lines appear to be evenly spaced and cover the entire plot area. The plot seems to be a visualization of a grid or coordinate system with non-linear distortions, as indicated by the curved grid lines."
+            }
+        ]
+    },
+    {
+        "instance_id": "astropy__astropy-13838",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a table representation with the following details: The table is labeled as 'QTable(rows=events[0])' indicating it is a table with rows from the first event of a list named 'events'. The table has a length of 3. The first column is labeled 'col0' and contains the values 'str1', 'A', 'B', and 'C'. The second column is labeled 'str1' and contains the values 'A', 'B', and 'C'. The third column is labeled 'A' and contains the values 'B' and 'C'. The fourth column is labeled 'B' and contains the values 'C'. The fifth column is labeled 'C' and contains the values '[]'. The table appears to be a representation of a structured data format, possibly from a software application or a programming environment."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows a table representation with the following details: The table is labeled as 'QTable(rows=events)' indicating it is a table with rows from a list named 'events'. The table has a length of 3. The first row contains the column headers 'A', 'B', and 'C'. The second row contains the values 'int64', 'int64', and 'object' indicating the data types of the columns. The third row contains the values '0', '0', and '[]' for the first event. The fourth row contains the values '1', '0', and '[]' for the second event. The fifth row contains the values '2', '2', and '[0 1]' for the third event. The table appears to be a representation of a structured data format, possibly from a software application or a programming environment."
+            }
+        ]
+    },
+    {
+        "instance_id": "astropy__astropy-14295",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "A graph representing lines of constant equatorial coordinates in pixel space. The x-axis is labeled 'RA---CAR-SIP' with values ranging from 07h45m to 24m. The y-axis is labeled 'DEC---CAR-SIP' with values ranging from 26° to 35°. The graph shows a grid of curved lines that represent the distortion in the pixel space due to the equatorial coordinates. The lines are evenly spaced and curve in a consistent pattern across the graph."
+            },
+            {
+                "image_id": "2",
+                "description": "A graph titled 'Lines of constant equatorial coordinates in pixel space'. The x-axis ranges from 0 to 1000, and the y-axis ranges from 0 to 1000. The graph displays a grid of blue lines that form a distorted pattern, indicating the transformation of equatorial coordinates into pixel space. The lines are evenly spaced and curve in a consistent pattern across the graph."
+            },
+            {
+                "image_id": "3",
+                "description": "A graph representing lines of constant equatorial coordinates in pixel space. The x-axis is labeled 'RA---CAR-SIP' with values ranging from 07h44m to 26m. The y-axis is labeled 'DEC---CAR-SIP' with values ranging from 26° to 35°. The graph shows a grid of curved lines that represent the distortion in the pixel space due to the equatorial coordinates. The lines are evenly spaced and curve in a consistent pattern across the graph."
+            }
+        ]
+    },
+    {
+        "instance_id": "astropy__astropy-8292",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a section of a webpage discussing the dimensionless version of the Hubble constant, often referred to as 'little h'. It includes a code snippet demonstrating how to use the 'littleh' unit in the Astropy library for conversions between physical and 'little h' units. The code snippet is as follows: `import astropy.units as u; H0_70 = 70 * u.km/u.s / u.Mpc; distance = 100 * (u.Mpc/u.littleh); distance.to(u.Mpc, u.with_H0(H0_70)); luminosity = 1 * u.Lsun * u.littleh**-2; luminosity.to(u.Lsun, u.with_H0(H0_70))`. Below the code snippet, there is a note explaining the unit name 'littleh' and its usage to avoid confusion with 'hours'. The image also includes a highlighted section of code showing the conversion of a distance from 'littleh' units to Mpc, resulting in a value of 67.74 Mpc."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-13908",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "This image shows a plot with a time series on the x-axis and random values on the y-axis. The x-axis is labeled with days of the week ('Sat', 'Sun', 'Mon') and hours ('00:00', '06:00', '12:00', '18:00'). The plot is intended to demonstrate the issue of missing minor ticklabels at positions of major ticks, as described in the bug report. The minor ticklabels showing '00:00' hours are missing, which is the actual outcome observed by the user."
+            },
+            {
+                "image_id": "2",
+                "image_description": "This image shows a plot with a time series on the x-axis and random values on the y-axis. The x-axis is labeled with days of the week ('Sat', 'Sun', 'Mon') and hours ('00:00', '06:00', '12:00', '18:00'). The plot is intended to demonstrate the expected outcome, where the minor ticklabels showing '00:00' hours are present, as described in the bug report. This is the behavior observed when running the code with matplotlib 3.0.2 or below."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-13980",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image displays two polar plots side by side, labeled 'expected' and 'unexpected' respectively. Both plots have a circular layout with degree markings from 0° to 360° around the circumference. The 'expected' plot on the left shows a uniform distribution of blue data points across the entire circular area, with the radial scale ranging from 0 to 1. The 'unexpected' plot on the right also shows a uniform distribution of blue data points, but the radial scale ranges from approximately -0.05 to 1, creating a noticeable gap around the center of the plot. This discrepancy in the radial scale minimum is the issue being reported, as it leads to confusion about the meaning of the plot, especially for users unfamiliar with polar plots where r=0 is not at the very center point of the plot."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-13983",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a simple line plot generated by Matplotlib. It shows a straight line with a positive slope, indicating a linear relationship between the x and y variables. The x-axis is labeled with numerical values ranging from 730120 to 730150, which appear to be dates in the format of Julian dates. The y-axis ranges from 0 to 1, with tick marks at intervals of 0.2. The line starts at the origin (0,0) and ends at the point (730150, 1), suggesting a perfect positive correlation between the two variables. The plot is enclosed in a white border, and the line is colored blue."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-13984",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a 3D scatter plot generated using matplotlib's `Axes3D` class. It displays three points in a 3D space, each represented by a blue dot. The points are located at the coordinates (0, 0, 1), (0, 1, 0), and (1, 0, 0) along the x, y, and z axes, respectively. The plot has a grid background with axes labeled in red, and the axes lines are also colored red. The tick marks on the axes are not colored, which is the issue being reported. The plot is enclosed in a cube-like structure with a transparent background, allowing the viewer to see the points and axes clearly. The image is related to a bug report about the inability to change the color of tick marks on `Axes3D` plots in matplotlib, despite the `ax.tick_params` method being used to attempt this change."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-14043",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a bar plot with error bars, displaying data across a range of x-values from -2 to 10. The bars are color-coded: blue for x-values -2 to 0, orange for x-values 1 to 3, green for x-values 4 to 6, and red for x-values 7 to 9. Each bar has associated error bars with caps, indicating the variability or uncertainty in the data. The y-axis ranges from 0 to 35, with increments of 5. The error bars are positioned at the top of each bar, extending above and below the bar height, suggesting that the error bars are not respecting the zorder property as expected, especially for bars with zorder greater than 1. This visualization is intended to demonstrate an issue where bar plot error bars do not behave as expected when the zorder parameter is set to values greater than 1, as described in the bug report."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-14623",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a plot with a linear y-axis scale. The y-axis ranges from 1e5 (100,000) at the top to 1 at the bottom. The x-axis ranges from 0.4 to 1.0. The plot displays a blue line that starts at the top left corner (1e5, 0.4) and curves downward, ending at the bottom right corner (1, 1.0). The curve appears to be a smooth, decreasing function, likely representing an exponential decay or similar mathematical relationship."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows a plot with a logarithmic y-axis scale. The y-axis ranges from 10^0 (1) at the bottom to 10^5 (100,000) at the top, with logarithmic tick marks at 10^1, 10^2, 10^3, 10^4, and 10^5. The x-axis ranges from 0.4 to 1.0. The plot displays a blue line that starts at the bottom left corner (1, 0.4) and curves upward, ending at the top right corner (100,000, 1.0). The curve appears to be a smooth, increasing function, likely representing an exponential growth or similar mathematical relationship."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-19763",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "A screenshot of a terminal window displaying a list of running processes, with details such as PID, USER, PRI, NI, VIRT, RES, SHR, S, CPU%, MEM%, TIME+, and Command. The processes are related to Python scripts and Jupyter notebook kernels, and the user is 'ian'. The CPU usage for most processes is minimal, with one process showing 77.5% CPU usage."
+            },
+            {
+                "image_id": "2",
+                "image_description": "A screenshot of a terminal window displaying a list of running processes, with details such as PID, USER, PRI, NI, VIRT, RES, SHR, S, CPU%, MEM%, TIME+, and Command. The processes are related to Python scripts and Jupyter notebook kernels, and the user is 'ian'. The CPU usage for most processes is minimal, with one process showing 77.5% CPU usage."
+            },
+            {
+                "image_id": "3",
+                "image_description": "A screenshot of a matplotlib plot window displaying two subplots. The top subplot shows a sine wave with two peaks, and the bottom subplot shows a sine wave with four peaks. The x-axis ranges from 0.00 to 2.00, and the y-axis ranges from -1.0 to 1.0. The plot is labeled as 'Figure 1' and has a toolbar with options such as Home, Back, Forward, Zoom, Pan, Save, and Quit."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-20470",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a simple line plot created using Matplotlib. The x-axis ranges from 0 to 10, and the y-axis also ranges from 0 to 10. A single blue line is plotted on the graph, starting from the origin (0,0) and extending to the point (10,10), indicating a linear relationship with a slope of 1. In the center of the plot, there is a text label that reads 'text'. In the top left corner of the plot, there is a legend box with a single entry labeled 'line', which corresponds to the blue line plotted on the graph. The legend box does not contain an entry for the text label, which is the issue described in the bug report. The plot is contained within a white border, and the overall layout is typical of a Matplotlib-generated plot."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-20518",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "A simple line plot with a straight blue line running diagonally from the bottom left to the top right of the plot area. The x-axis ranges from 0 to 2, and the y-axis also ranges from 0 to 2. The plot appears to be a basic example of a line graph, likely used to demonstrate the functionality of the PGF backend in Matplotlib."
+            },
+            {
+                "image_id": "2",
+                "image_description": "A line plot similar to the first image, but with an additional black, jagged line that overlays the blue line. The black line appears to be a result of applying sketch parameters to the plot, as indicated by the code sample provided in the issue description. The x-axis and y-axis ranges are the same as in the first image, from 0 to 2. This image demonstrates the intended effect of the `set_sketch_params()` function when used with the PGF backend, showing how it modifies the appearance of the plotted lines."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-20584",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a smooth, continuous circle plotted on a Cartesian coordinate system. The x-axis ranges from -1.0 to 1.0, and the y-axis also ranges from -1.0 to 1.0. The circle is centered at the origin (0,0) and has a radius of 1.0. The plot appears to be a result of a contour plot with a single level at 1.0, as indicated by the smooth and unbroken line that forms the circle."
+            },
+            {
+                "image_id": "2",
+                "description": "The image displays a circle that appears to be composed of straight line segments, giving it a polygonal shape rather than a smooth curve. The x-axis ranges from -1.0 to 1.0, and the y-axis also ranges from -1.0 to 1.0, similar to the first image. The circle is centered at the origin (0,0) and has a radius of 1.0. This plot seems to be the result of a contour plot with a single level at 1.0, but after manipulating the segments of the line, leading to a coarser and less smooth appearance compared to the first image."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-20761",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a figure with multiple subplots arranged in a grid layout. The top row contains a single subplot with a title 'Some Other Title'. The bottom row has three subplots. The first subplot on the left has a title 'Nov. 7 to Nov. 13', the middle subplot has a title 'Nov. 13 to Nov. 27', and the rightmost subplot has a title 'Nov. 27 to Dec. 31'. The subplots are labeled with 'My Subfigure Label' and 'Other Subfigure SubLabel'. The x-axis and y-axis labels are visible, with the x-axis ranging from 0 to 1 and the y-axis ranging from 0 to 1. The subplots appear to be empty, with no data plotted."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows a figure with three subplots arranged horizontally. Each subplot contains a color-coded heatmap with a color bar on the right side. The x-axis and y-axis labels are visible, with the x-axis ranging from -40 to 20 and the y-axis ranging from -500 to 500. The subplots are labeled with 'My Subfigure Label'. The color bar indicates different color intensities, suggesting the presence of data in the heatmaps. The subplots appear to be part of a scientific visualization, possibly related to data analysis or machine learning."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-20826",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a 2x2 grid of subplots, each displaying a sine wave. The x-axis ranges from 0 to 6, and the y-axis ranges from -1 to 1. The sine wave peaks at approximately x=2 and troughs at approximately x=4. The subplots share the same x and y axes, as indicated by the identical axis ranges and labels. The plot is generated using matplotlib, and the issue reported is related to the behavior of `ax.clear()` in matplotlib 3.4.2, which causes extra ticks and un-hidden shared-axis tick labels to appear."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows a 2x2 grid of subplots, each displaying a sine wave. The x-axis ranges from 0 to 6, and the y-axis ranges from -1 to 1. The sine wave peaks at approximately x=2 and troughs at approximately x=4. The subplots share the same x and y axes, as indicated by the identical axis ranges and labels. The plot is generated using matplotlib, and the expected outcome is that the `ax.clear()` method should not cause extra ticks or un-hidden shared-axis tick labels to appear, as observed in matplotlib 3.4.1."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-21443",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a plot with two lines crossing each other. The x-axis ranges from 0.0 to 1.0, and the y-axis ranges from 0.0 to 1.0. One line is solid red, starting from the bottom left corner (0.0, 0.0) and ending at the top right corner (1.0, 1.0). The other line is dashed blue, starting from the top left corner (0.0, 1.0) and ending at the bottom right corner (1.0, 0.0). The plot appears to be a simple 2D graph with no labels or titles."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows two separate plots side by side. The left plot has a single solid red line that starts from the bottom left corner (0.0, 0.0) and ends at the top right corner (1.0, 1.0). The right plot has a single dashed blue line that starts from the top left corner (0.0, 1.0) and ends at the bottom right corner (1.0, 0.0). Both plots have the same x-axis range from 0.0 to 1.0, and the y-axis range from 0.0 to 1.0. The plots are simple 2D graphs with no labels or titles."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-21490",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a simple line plot with a single blue line that starts at the origin (0,0) and extends to the point (4,4). The x-axis ranges from 0 to 4, and the y-axis also ranges from 0 to 4. The line is plotted with a solid line style and has a dot at the point (2,2). This plot appears to be the initial visualization of the data points before any modifications were made to the underlying data array."
+            },
+            {
+                "image_id": "2",
+                "description": "This image is identical to the first image, showing the same line plot with a blue line starting at the origin (0,0) and extending to the point (4,4). The x-axis and y-axis both range from 0 to 4, and the line is plotted with a solid line style, with a dot at the point (2,2). This indicates that modifying the underlying data array did not affect the line plot, as expected."
+            },
+            {
+                "image_id": "3",
+                "description": "The image shows a line plot with a blue line that starts at the origin (0,0) and extends vertically to the point (0,2), then horizontally to the point (1,2), and finally vertically again to the point (1,4). The x-axis ranges from 0 to 4, and the y-axis ranges from 0 to 4. The line is plotted with a solid line style, and there is a dot at the point (1,4). This plot indicates that the x-axis data has been updated, but the y-axis data remains unchanged, which is a different outcome from the expected behavior."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-21550",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a widget interface with sliders and a dropdown menu. The sliders are labeled 'n', 'm', 'k', and 'p', with values set to 16, 5, 5, and 0.50 respectively. The dropdown menu is labeled 'generator' with the option 'lobster' selected. Below the widget, there is a small blue dot, which appears to be the only graphical element displayed. This image is related to a bug report where the display is not working well when swapping matplotlib-3.4.3 with matplotlib-3.5.0.dev2445+gb09aad279b, with all other conditions being equal. The expected outcome is a graphical representation of a random graph, but the actual outcome shows only a single blue dot."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows the same widget interface as the previous image, with sliders and a dropdown menu. The sliders are labeled 'n', 'm', 'k', and 'p', with values set to 16, 5, 5, and 0.50 respectively. The dropdown menu is labeled 'generator' with the option 'lobster' selected. Below the widget, there is a graphical representation of a random graph, with nodes connected by edges. This image is related to a bug report where the display is not working well when swapping matplotlib-3.4.3 with matplotlib-3.5.0.dev2445+gb09aad279b, with all other conditions being equal. The expected outcome is a graphical representation of a random graph, and this image shows that the actual outcome matches the expected outcome, displaying the random graph correctly."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-21568",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "A line plot with a datetime axis showing data points from 01:00:00 to 01:00:10. The x-axis is labeled with timestamps in the format '01:00:00', '01:00:05', and '01:00:10'. The y-axis ranges from 0 to 1. The plot is created using matplotlib version 3.3.4, as indicated by the filename '3.3.4.png'. The line is blue and shows a random pattern."
+            },
+            {
+                "image_id": "2",
+                "image_description": "A line plot with a datetime axis showing data points from 01:00:00 to 01:00:10. The x-axis is labeled with timestamps in the format '01:00:00', '01:00:05', and '01:00:10'. The y-axis ranges from 0 to 1. The plot is created using matplotlib version 3.4.3, as indicated by the filename '3.4.3.png'. The line is blue and shows a random pattern."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-21617",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a screenshot of a software application displaying an EPS file named 'bad.eps'. The main content of the image is a polar coordinate grid with concentric circles and radial lines emanating from the center. The grid is centered in a square frame. In the top left corner, there is a smaller thumbnail preview of the same grid. The application interface includes a toolbar at the top with various icons and a zoom level indicator showing '23.9%'. The file path '/tmp/bad.eps' is visible at the top, and there is a navigation bar at the bottom with options for different views. The overall appearance suggests a graphical viewer or editor for EPS files."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows a screenshot of a software application displaying an EPS file named 'bad.eps'. The main content of the image is a polar coordinate grid with concentric circles and radial lines emanating from the center. The grid is centered in a square frame. In the top left corner, there is a smaller thumbnail preview of the same grid. The application interface includes a toolbar at the top with various icons and a zoom level indicator showing '23.9%'. The file path '/tmp/bad.eps' is visible at the top, and there is a navigation bar at the bottom with options for different views. Additionally, there is a text label '>>> do you see me <<<' at the top center of the main grid, which is part of the EPS file content. The overall appearance suggests a graphical viewer or editor for EPS files."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-22865",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "A horizontal colorbar with 10 segments, each representing a different color from the viridis colormap. The colors range from dark blue on the left to yellow on the right. The colorbar is divided into segments by thin black lines, but the lines at the very beginning and end of the colorbar are missing, indicating that the drawedges=True and extend='both' settings are not fully applied."
+            },
+            {
+                "image_id": "2",
+                "description": "A horizontal colorbar with 10 segments, each representing a different color from the viridis colormap. The colors range from dark blue on the left to yellow on the right. The colorbar is divided into segments by thin black lines, but the lines at the very beginning and end of the colorbar are missing, indicating that the drawedges=True and extend='both' settings are not fully applied."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-22871",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a line plot showing temperature in degrees Celsius over a period from March to September. The x-axis represents the months, starting from March and ending in September, with each month labeled. The y-axis represents the temperature in degrees Celsius, ranging from 0.00 to -2.00. The line plot shows a continuous decrease in temperature over the months, starting at 0.00 degrees Celsius in March and decreasing to approximately -2.00 degrees Celsius in September. The plot is displayed on a grid with horizontal and vertical lines to help visualize the data points. The y-axis is labeled 'Temperature (°C)', and the x-axis labels the months from March to September. The plot is created using matplotlib, as indicated by the code snippet provided in the issue description."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-22931",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a simple line plot with a single blue line that starts at the origin (0,0) and extends to the point (1,1). The x-axis ranges from 0 to 1, and the y-axis also ranges from 0 to 1. The plot is displayed in a window with a title 'Figure 1' at the top. The window includes a toolbar with various icons, such as home, back, forward, save, zoom, and others, indicating it is a graphical user interface for a plotting library, likely Matplotlib. The plot appears to be a basic example of a line plot, commonly used to demonstrate basic plotting functionality."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-23047",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a histogram plot with the x-axis ranging from 0.0 to 1.0 and the y-axis ranging from 0 to 55. The histogram is filled with blue bars, and there are noticeable gaps between some of the bars, particularly at the lower end of the x-axis. The gaps indicate that there are no data points within those ranges. The bars are of varying heights, with the tallest bar located at the very beginning of the x-axis, close to 0.0. The histogram appears to represent a distribution of values, with the gaps and overlapping areas suggesting issues with the binning process, possibly due to the use of float16 precision for the data."
+            },
+            {
+                "image_id": "2",
+                "description": "The image is a histogram plot with the x-axis ranging from 0.0 to 1.0 and the y-axis ranging from 0 to 55. The histogram is filled with blue bars, and there are noticeable gaps between some of the bars, particularly at the lower end of the x-axis. The gaps indicate that there are no data points within those ranges. The bars are of varying heights, with the tallest bar located at the very beginning of the x-axis, close to 0.0. The histogram appears to represent a distribution of values, with the gaps and overlapping areas suggesting issues with the binning process, possibly due to the use of float16 precision for the data."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-23111",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "This image shows a close-up view of a graphical user interface, specifically a toolbar or menu area. The toolbar contains three icons: a minus sign, a square, and an 'X' symbol, which are typically used for zoom out, reset view, and close functions, respectively. The background is white, and the icons are black, making them stand out clearly. This image is likely related to the graphical user interface of the software being used to display the matplotlib plots."
+            },
+            {
+                "image_id": "2",
+                "description": "This image displays a mathematical expression and a list of numbers. The expression is 'x = 0.049 + 0.260', which is a simple addition equation. Below the equation, there is a list of numbers enclosed in square brackets: [0.000]. This image is likely related to the numerical data being processed or displayed by the matplotlib library, possibly showing the values that are causing the math domain errors when attempting to display the image."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-23412",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a plot with a single blue rectangle centered at the coordinates (0.5, 0.5) with a width and height of 1. The rectangle has a dashed edge with a linewidth of 4 and a linestyle of (0, (10, 10)). The plot has a white background and the axes are labeled with numerical values ranging from 0 to 2 on both the x and y axes. The rectangle's dashed lines are evenly spaced and do not show any visible offset, indicating that the linestyle offset is not being applied as expected."
+            },
+            {
+                "image_id": "2",
+                "description": "The image displays a plot with two overlapping sinusoidal curves. The blue curve represents the sine function of x + π/2, and the red curve represents the sine function of x + π/4. Both curves are plotted against the x-axis, which ranges from 0 to 12. The y-axis ranges from -1 to 1. The blue curve has a linestyle of (0, (10, 10)), and the red curve has a linestyle of (10, (10, 10)). The dashed lines of both curves are evenly spaced, and the offset between the dashed lines of the two curves is clearly visible, demonstrating the expected behavior of the linestyle offset."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-24088",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "A histogram plot with 10 bars, each representing a bin of data. The bars are colored in a gradient from dark red to yellow, with the darkest red bar at the leftmost edge and the lightest yellow bar at the rightmost edge. The x-axis ranges from 0.0 to 1.0, and the y-axis ranges from 0 to 16. The bars' heights vary, with the tallest bar reaching a height of 16 and the shortest bar reaching a height of 4. The histogram represents the distribution of a random dataset generated using `numpy.random.rand(100)`. Each bar's color corresponds to the value of its bin's midpoint, using the 'hot' colormap from matplotlib."
+            },
+            {
+                "image_id": "2",
+                "description": "A histogram plot with 10 bars, each representing a bin of data. The bars are colored in a gradient from dark red to yellow, with the darkest red bar at the leftmost edge and the lightest yellow bar at the rightmost edge. The x-axis ranges from 0.0 to 1.0, and the y-axis ranges from 0 to 16. The bars' heights vary, with the tallest bar reaching a height of 16 and the shortest bar reaching a height of 4. To the right of the histogram, there is a colorbar with a vertical scale ranging from 0.0 to 1.0, indicating the color mapping used for the bars. The colorbar is labeled with the 'hot' colormap from matplotlib. The histogram and colorbar together represent the distribution of a random dataset and its corresponding color mapping."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-24177",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows two histograms side by side. The left histogram is a bar histogram with a blue fill, representing the density of a dataset. The x-axis ranges from -4 to 4, and the y-axis represents the density, ranging from 0 to 0.35. The right histogram is a step histogram without a fill, also representing the density of the same dataset. The x-axis ranges from -4 to 4, and the y-axis ranges from 0 to 0.25. Both histograms have a bell-shaped curve, indicating a normal distribution of the data. The bar histogram on the left appears to be auto-scaled to fit the density axis, while the step histogram on the right does not seem to be auto-scaled, as the density axis does not fully encompass the histogram's peak."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows two histograms side by side. The left histogram is a bar histogram with a blue fill, representing the density of a dataset. The x-axis ranges from -4 to 4, and the y-axis represents the density, ranging from 0 to 0.4. The right histogram is a step histogram without a fill, also representing the density of the same dataset. The x-axis ranges from -4 to 4, and the y-axis ranges from 0 to 0.4. Both histograms have a bell-shaped curve, indicating a normal distribution of the data. The bar histogram on the left appears to be auto-scaled to fit the density axis, while the step histogram on the right does not seem to be auto-scaled, as the density axis does not fully encompass the histogram's peak."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-24189",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a plot generated by matplotlib with a mosaic layout. The mosaic consists of three sections labeled 'A', 'B', and 'C'. Section 'A' is a large square occupying the left side of the plot, with coordinates ranging from (0.0, 0.0) to (1.0, 1.0). Section 'B' is a smaller square located in the top right corner, with coordinates ranging from (0.0, 0.0) to (1.0, 1.0) for both axes. Section 'C' is another smaller square located directly below 'B', sharing the same x-axis range but with a y-axis range from (0.0, 0.0) to (1.0, 1.0). The overall layout suggests an attempt to create a nested mosaic with different width ratios, which is related to the bug described in the issue where specifying width_ratios for a nested mosaic fails unless all outer and inner mosaics have the same number of columns."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-24570",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a plot generated by Matplotlib, showcasing the alignment of two rectangles within a drawing area. The plot has a simple Cartesian coordinate system with axes ranging from 0 to 1.0. Inside the plot, there is a black rectangular box containing two blue rectangles. The text 'align=bottom' is written inside the black box, indicating the alignment setting used. The two blue rectangles are aligned at the bottom of the black box, with the taller rectangle on the right side and the shorter one on the left. The plot background is white, and the axes are labeled with numerical values at regular intervals."
+            },
+            {
+                "image_id": "2",
+                "description": "This image is a plot similar to the first one, with the same alignment setting 'align=bottom'. The plot's coordinate system and axes are identical, ranging from 0 to 1.0. Inside the plot, there is a black rectangular box containing two blue rectangles. The text 'align=bottom' is written inside the black box, similar to the first image. The two blue rectangles are aligned at the bottom of the black box, with the taller rectangle on the right side and the shorter one on the left. The plot background is white, and the axes are labeled with numerical values at regular intervals, matching the first image."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-24691",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a diagram with two overlapping ellipses. The outer ellipse is larger and has a pinkish-red fill with a solid red border. The inner ellipse is smaller and has a light grey fill with a solid blue border. The inner ellipse is positioned slightly to the right and below the center of the outer ellipse. The background of the image is white. This diagram appears to be a visual representation of the issue described in the context, where the author wants to have a solid edge color and a semi-transparent fill color for patches in their diagrams. The colors and transparency levels used in the diagram demonstrate the desired effect of having a solid border with a faded fill."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-24749",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a traceback of an error occurring in the matplotlib library, specifically in the file 'contour.py' at line 1408. The error message indicates an 'IndexError: tuple index out of range', suggesting that an indexing operation is attempting to access an index that does not exist in a tuple. The code snippet leading to the error involves a conditional check within the '_process_args' method of the 'QuadContourSet' class, where it checks if the first argument is an instance of 'QuadContourSet' and then attempts to access its 'levels' attribute."
+            },
+            {
+                "image_id": "2",
+                "description": "The image displays a blank plot with axes ranging from 0 to 1 on both the x and y axes. The plot is devoid of any data or labels, indicating that it is an empty plot, which could be the result of an unsuccessful attempt to plot data due to the error described in the first image."
+            },
+            {
+                "image_id": "3",
+                "description": "The image shows a contour plot generated by matplotlib. The plot displays a complex pattern of contour lines with varying colors representing different levels of the data. The x-axis ranges from 0 to 25, and the y-axis also ranges from 0 to 25. The contour lines are densely packed, indicating a high-resolution dataset. The plot appears to be successfully rendered, suggesting that the issue described in the first image has been resolved or is not related to this particular plot."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-24768",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a polar plot created using matplotlib. It displays a color map with a grid of squares, each with a different color. The colors range from dark purple to bright yellow, with shades of green and blue in between. The plot is circular, with the x-axis ranging from -10 to 10 and the y-axis ranging from -10 to 10. The center of the plot is marked with a white circle. The plot is annotated with the text '3.7.0.dev447+g2d18bba0ea' in the center. The background of the plot is white. The plot appears to be part of a test case demonstrating the use of rasterization in matplotlib."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-24849",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a simple plot created using Matplotlib. It features a square plot area with axes ranging from 0 to 1 on both the x and y axes. There are two vertical dashed lines (orange in color) plotted at the x-values of 0.25 and 0.75, spanning the entire y-axis from 0 to 1. The plot is minimalistic, with no additional labels, titles, or gridlines, focusing solely on the two vertical dashed lines."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-24870",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image displays two contour plots side by side. The left plot shows a contour of a boolean 2D array with default levels, resulting in multiple contour lines overlapping each other. The right plot shows the same boolean 2D array contoured with a single level at 0.5, resulting in a single contour line that clearly separates the True and False regions. The x-axis and y-axis range from 0 to 80, and the contour lines are diagonal, indicating the pattern of the boolean array."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-24971",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a figure with two subplots arranged in a mosaic layout with labels 'AB' and 'AC'. The subplot labeled 'AB' is empty, while the subplot labeled 'AC' contains a color gradient image. The color gradient transitions from purple at the top to dark blue, then to green, and finally to yellow at the bottom. The x-axis of the color gradient subplot ranges from 0 to 8, and the y-axis ranges from 0 to 10. The figure is saved with a compressed layout, but the expected outcome is not achieved as described in the bug summary."
+            },
+            {
+                "image_id": "2",
+                "description": "This image is identical to the first image, showing the same figure with two subplots in a mosaic layout. The subplot labeled 'AB' is empty, and the subplot labeled 'AC' contains the same color gradient image with a transition from purple to dark blue, green, and yellow. The x-axis ranges from 0 to 8, and the y-axis ranges from 0 to 10. The figure is saved with a compressed layout, but the expected outcome is not achieved as described in the bug summary."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-25287",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a plot with a single blue line graph. The x-axis ranges from 0.00 to 2.00, and the y-axis ranges from 1.0100 to 1.0300, with a label '1e9' indicating the scientific notation for the y-axis values. The y-axis tick labels are colored red. The line graph shows a linear relationship between the x and y values, starting at approximately (0.00, 1.0100) and ending at approximately (2.00, 1.0300)."
+            },
+            {
+                "image_id": "2",
+                "description": "The image is a plot with a single blue line graph. The x-axis ranges from 0.00 to 2.00, and the y-axis ranges from 1.0100 to 1.0300, with a label '1e9' indicating the scientific notation for the y-axis values. The y-axis tick labels are colored red. The line graph shows a linear relationship between the x and y values, starting at approximately (0.00, 1.0100) and ending at approximately (2.00, 1.0300)."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-25334",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a blank white rectangle with a black border. It appears to be a placeholder or an empty image, which could be related to the expected outcome of the code sample provided in the bug report. The code sample is intended to generate a contour plot using matplotlib, but due to an issue with handling NaN values, the expected outcome is an empty plot. This image might represent the expected visualization of the empty plot, although it is not explicitly clear from the image alone."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-25340",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a series of range sliders with labels and values indicating the issue described in the bug report. There are four range sliders, each with a label and a set of values in parentheses. The first slider is labeled 'wrong' with values (1.00, 3.25), the second is labeled 'wrong2' with values (7.75, 10.00), the third is labeled 'correct' with values (1, 2), and the fourth is labeled 'correct2' with values (4, 6). The sliders are represented as horizontal bars with two handles, one on each end, indicating the range of values. The 'wrong' and 'wrong2' sliders show incorrect values, while the 'correct' and 'correct2' sliders show expected values. The issue is related to the set_val() method of a range slider not setting the value correctly with values close to the minimal and maximal values of the range slider."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-25346",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a 2x2 grid of subplots created using matplotlib. Each subplot is a simple line plot with a range from 0 to 1 on both the x and y axes. The top row of subplots has a shared suptitle that reads 'suptitle that is clearly too long in this case', which is wrapped to fit within the figure. The bottom left subplot has a title that reads 'axes title that is too long for the size', which is also wrapped. The figure is saved with a constrained layout, but the wrapping of the titles causes them to overlap with the subplots, indicating that the layout does not adjust properly to accommodate the wrapped text."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-25405",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "This image shows a plot titled 'Good Plot' with a linear scale on the x-axis ranging from 0 to 7 and a logarithmic scale on the y-axis ranging from 10^0 to 10^7. The plot displays a straight line that starts at the origin (0, 10^0) and increases linearly as the x-value increases. The y-axis has logarithmic tick marks at powers of 10, specifically at 10^0, 10^1, 10^2, 10^3, 10^4, 10^5, 10^6, and 10^7. The plot is intended to demonstrate the expected behavior of logarithmic tick markers when the y-axis scales a specific range."
+            },
+            {
+                "image_id": "2",
+                "description": "This image shows a plot titled 'Bad Plot' with a linear scale on the x-axis ranging from 0 to 8 and a linear scale on the y-axis ranging from 0 to 10^8. The plot displays a straight line that starts at the origin (0, 0) and increases linearly as the x-value increases. The y-axis has linear tick marks at regular intervals, specifically at 0, 1, 2, 3, 4, 5, 6, 7, and 8. This plot is intended to demonstrate the unexpected behavior of logarithmic tick markers when the y-axis scales a different range, showing no logarithmic tick marks."
+            },
+            {
+                "image_id": "3",
+                "description": "This image is identical to the first image, showing a plot titled 'Good Plot' with a linear scale on the x-axis ranging from 0 to 7 and a logarithmic scale on the y-axis ranging from 10^0 to 10^7. The plot displays a straight line that starts at the origin (0, 10^0) and increases linearly as the x-value increases. The y-axis has logarithmic tick marks at powers of 10, specifically at 10^0, 10^1, 10^2, 10^3, 10^4, 10^5, 10^6, and 10^7. This plot is intended to demonstrate the expected behavior of logarithmic tick markers when the y-axis scales a specific range."
+            },
+            {
+                "image_id": "4",
+                "description": "This image is identical to the second image, showing a plot titled 'Bad Plot' with a linear scale on the x-axis ranging from 0 to 8 and a linear scale on the y-axis ranging from 0 to 10^8. The plot displays a straight line that starts at the origin (0, 0) and increases linearly as the x-value increases. The y-axis has linear tick marks at regular intervals, specifically at 0, 1, 2, 3, 4, 5, 6, 7, and 8. This plot is intended to demonstrate the unexpected behavior of logarithmic tick markers when the y-axis scales a different range, showing no logarithmic tick marks."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-25499",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a heatmap visualization with a colorbar on the right side. The heatmap is divided into a 6x6 grid, with the x-axis ranging from 0 to 6 and the y-axis ranging from 0 to 6. The color gradient ranges from dark purple (representing lower values) to bright yellow (representing higher values). There are four distinct regions within the heatmap: the top left, top right, bottom left, and bottom right. Each region has a central bright yellow spot, surrounded by a gradient transitioning to dark purple at the edges. The colorbar on the right side shows a gradient from dark purple at the bottom (-0.75) to bright yellow at the top (0.75). The heatmap appears to be correctly scaled within the plot area, with no noticeable resizing or distortion."
+            },
+            {
+                "image_id": "2",
+                "description": "The image is a heatmap visualization with a colorbar on the right side. The heatmap is divided into a 6x6 grid, with the x-axis ranging from 0 to 6 and the y-axis ranging from 0 to 6. The color gradient ranges from dark purple (representing lower values) to bright yellow (representing higher values). There are four distinct regions within the heatmap: the top left, top right, bottom left, and bottom right. Each region has a central bright yellow spot, surrounded by a gradient transitioning to dark purple at the edges. The colorbar on the right side shows a gradient from dark purple at the bottom (-0.75) to bright yellow at the top (0.75). The heatmap appears to be correctly scaled within the plot area, with no noticeable resizing or distortion."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-25565",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a 3D plot of two overlapping ellipsoids, represented as a wireframe mesh. The mesh is colored in a dark blue shade, with black lines outlining the triangular facets that make up the surface of the ellipsoids. The plot is set within a 3D Cartesian coordinate system with axes labeled from 0 to 30 on the x and y axes, and from 0 to 32 on the z-axis. The background of the plot is a light gray grid, providing a reference for the spatial orientation of the ellipsoids. The image also contains a legend in the top right corner, labeled 'Surface', indicating that the blue wireframe mesh represents the surface of the plotted objects. The legend is enclosed in a light gray box with a black border. The overall visual representation suggests that the image is part of a scientific or technical visualization, likely related to the issue described in the code snippet, which involves plotting an iso surface using Poly3dCollection in Matplotlib."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-25640",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a contour plot with labels, titled 'Simplest default with labels'. The plot shows a set of contour lines representing different levels of a function Z, which is the difference of two bivariate normal distributions. The contour lines are color-coded and labeled with their corresponding Z values. The plot has a white background with a grid of x and y axes ranging from -3 to 2 on the x-axis and -2 to 1.5 on the y-axis. The contour lines are colored in shades of blue, green, and yellow, with labels indicating the Z values at various points. The labels are positioned next to the contour lines and are written in a bold font. The contour lines form concentric circles and ellipses, with the innermost circle labeled as -1.200 and the outermost circle labeled as 1.600. The plot appears to be generated using matplotlib, as indicated by the style and formatting of the labels and axes."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-25667",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a horizontal bar chart with three bars. The x-axis ranges from 15340 to 15380, and the y-axis ranges from -0.5 to 3.5. The first bar starts at 15340 and has a height of 0.5. The second bar starts at 15360 and has a height of 3. The third bar starts at 15375 and has a height of 1. The bars are filled with a blue color. The chart is plotted on a white background with black grid lines."
+            },
+            {
+                "image_id": "2",
+                "description": "The image is a horizontal bar chart with three bars. The x-axis ranges from January 1st to February 15th, 2012, and the y-axis ranges from -0.5 to 3.5. The first bar starts at January 1st and has a height of 0.5. The second bar starts at January 15th and has a height of 3. The third bar starts at February 1st and has a height of 1. The bars are filled with a blue color. The chart is plotted on a white background with black grid lines."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-25779",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image depicts a polarization ellipse with various labeled components. The ellipse is shown in red, with its major axis (a) represented by a green dashed line and its minor axis (b) by a blue dashed line. The major axis is labeled with the angle ψ, and the minor axis is labeled with the angle χ. The ellipse is oriented within a coordinate system defined by the axes ε1 (horizontal) and ε2 (vertical). An arrow at the end of the ellipse indicates the direction of rotation, which is counterclockwise. The background includes dashed lines that appear to represent the coordinate grid."
+            },
+            {
+                "image_id": "2",
+                "description": "This image is identical to the first image, depicting the same polarization ellipse with its major and minor axes labeled as ψ and χ, respectively. The ellipse is shown in red, with the major axis in green dashed lines and the minor axis in blue dashed lines. The ellipse is oriented within the same coordinate system defined by the axes ε1 (horizontal) and ε2 (vertical). An arrow at the end of the ellipse indicates the direction of rotation, which is counterclockwise. The background also includes dashed lines that appear to represent the coordinate grid."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-26078",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a graph with two lines plotted on a single set of axes. The x-axis ranges from 0.00 to 2.00, and the y-axis on the left side ranges from 0.0 V to 2.0 V. There is an additional y-axis on the right side ranging from 0.0 A to 3.0 A. The orange line represents voltage (V) and peaks at 2.0 V, while the blue line represents current (A) and reaches 3.0 A. The graph is titled 'Figure 1' and has navigation buttons at the bottom for home, back, forward, zoom, and save."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows a graph with two lines plotted on a single set of axes. The x-axis ranges from 0.00 to 2.00, and the y-axis on the left side ranges from 0.0 V to 2.0 V. There is an additional y-axis on the right side ranging from 0.0 A to 3.0 A. The blue line represents voltage (V) and peaks at 2.0 V, while the blue line also represents current (A) and reaches 3.0 A. The graph is titled 'Figure 1' and has navigation buttons at the bottom for home, back, forward, zoom, and save."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-26466",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a 2D plot with a rectangular coordinate system. The x-axis ranges from -5 to 5, and the y-axis ranges from -3 to 3. There are two arrows on the plot. The first arrow starts at the point (-4, 1) and points downwards to the point (-1, 1). The second arrow is horizontal and spans from the point (1, 1) to the point (4, 1). The plot appears to be a demonstration of the issue described in the bug report, where changing the array used for the 'xy' parameter of the annotate function affects the position of the arrows. The first arrow's position is altered after the array is changed, while the second arrow remains horizontal, indicating that a copy of the array was used instead of the original array."
+            }
+        ]
+    },
+    {
+        "instance_id": "mwaskom__seaborn-2576",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image displays two side-by-side plots, each representing a different value of the variable 't'. The plot on the left is labeled 't = 1' and shows a very narrow range of 'y' values, approximately between 0 and 10, with 'x' values ranging from 1.0 to 3.0. There is a single data point at (2.0, 5) and a regression line that is almost flat, indicating a very weak or no relationship between 'x' and 'y' for 't = 1'. The plot on the right is labeled 't = 2' and shows a much wider range of 'y' values, approximately between 100 and 800, with 'x' values ranging from 1.0 to 3.0. There are three data points: one at (1.0, 400), one at (2.0, 500), and one at (3.0, 200). The regression line is a straight line with a negative slope, indicating a negative relationship between 'x' and 'y' for 't = 2'. The shaded area around the regression line represents the confidence interval for the prediction."
+            }
+        ]
+    },
+    {
+        "instance_id": "mwaskom__seaborn-2846",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "A scatter plot with blue dots representing data points. The dots are scattered across the plot, with a higher concentration of points in the lower left corner and a sparser distribution towards the upper right. The plot appears to be a visualization of a dataset, likely showing a relationship or distribution between two variables."
+            },
+            {
+                "image_id": "2",
+                "description": "Two side-by-side plots, each showing a pixelated representation of data. The left plot has a higher concentration of blue pixels in the lower left corner, with a sparser distribution towards the upper right. The right plot shows a similar pattern but with a slightly different distribution of blue pixels. These plots seem to be visualizations of the same dataset as the scatter plot, but in a different format, possibly showing a different aspect or transformation of the data."
+            }
+        ]
+    },
+    {
+        "instance_id": "mwaskom__seaborn-2979",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image displays a 2x2 grid of scatter plots, with each subplot showing a relationship between two variables. The top left subplot has 'mpg' on the y-axis and 'horsepower' on the x-axis. The top right subplot has 'mpg' on the y-axis and 'cylinders' on the x-axis. The bottom left subplot has 'mpg' on the y-axis and 'horsepower' on the x-axis. The bottom right subplot has 'mpg' on the y-axis and 'cylinders' on the x-axis. All subplots have a grid overlay and the x and y axes are labeled with numerical values ranging from 0.00 to 1.00. The issue context suggests that the top two subplots should have distinct x labels, but they appear to be the same in the image."
+            }
+        ]
+    },
+    {
+        "instance_id": "mwaskom__seaborn-3180",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "This image shows a scatter plot with three subplots, each representing a different species of iris: setosa, versicolor, and virginica. The x-axis is labeled 'sepal_length' and the y-axis is labeled 'sepal_width'. The data points are plotted in blue, and the axes are scaled in scientific notation. The title for each subplot includes the species name prefixed with 'SOMEWHATLONG-'. The plot appears to be generated using seaborn version 0.12."
+            },
+            {
+                "image_id": "2",
+                "image_description": "This image is similar to the first one but shows a different arrangement of the subplots. The x-axis and y-axis labels are the same, and the data points are plotted in blue. The axes are scaled in scientific notation, and the titles for each subplot include the species name prefixed with 'SOMEWHATLONG-'. The plot appears to be generated using seaborn version 0.12."
+            },
+            {
+                "image_id": "3",
+                "image_description": "This image is identical to the first one, showing the same scatter plot with three subplots for the iris species setosa, versicolor, and virginica. The x-axis is labeled 'sepal_length', the y-axis is labeled 'sepal_width', and the data points are plotted in blue. The axes are scaled in scientific notation, and the titles for each subplot include the species name prefixed with 'SOMEWHATLONG-'. The plot appears to be generated using seaborn version 0.12."
+            },
+            {
+                "image_id": "4",
+                "image_description": "This image is similar to the second one but shows a different arrangement of the subplots. The x-axis and y-axis labels are the same, and the data points are plotted in blue. The axes are scaled in scientific notation, and the titles for each subplot include the species name prefixed with 'SOMEWHATLONG-'. The plot appears to be generated using seaborn version 0.12."
+            }
+        ]
+    },
+    {
+        "instance_id": "mwaskom__seaborn-3187",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a scatter plot created using seaborn, depicting the relationship between bill length (mm) and bill depth (mm) for different species of penguins. The x-axis represents 'bill_length_mm' ranging from 35 to 60 mm, while the y-axis represents 'bill_depth_mm' ranging from 14 to 22 mm. The plot uses different colors to distinguish between three species: Adelie (blue), Chinstrap (orange), and Gentoo (green). The size of the dots represents 'body_mass_mg', with a legend indicating sizes corresponding to 3, 4, 5, and 6. The issue mentioned in the context suggests that the legend values for 'body_mass_mg' are incorrect, as they should be in the order of 1E6, indicating a potential problem with the formatting of large numbers in the legend."
+            }
+        ]
+    },
+    {
+        "instance_id": "mwaskom__seaborn-3202",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a grid of scatter plots showing the bill depth in millimeters (mm) of penguins from different species and islands, categorized by sex (Male and Female). Each plot represents a different combination of island and species. The islands are Torgersen, Biscoe, and Dream, while the species are Adelie, Chinstrap, and Gentoo. The bill depth is plotted on the y-axis, ranging from 14 to 22 mm, and the sex is indicated on the x-axis. The plots show the distribution of bill depth measurements for males and females of each species on each island. The data points are represented by blue dots, and the plots are organized in a 3x3 grid, with the top row showing data from Torgersen Island, the middle row from Biscoe Island, and the bottom row from Dream Island. The left column shows data for Adelie penguins, the middle column for Chinstrap penguins, and the right column for Gentoo penguins. The plots for Gentoo penguins on Torgersen Island and Dream Island are empty, indicating no data for those categories."
+            }
+        ]
+    },
+    {
+        "instance_id": "mwaskom__seaborn-3216",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image displays two subplots side by side. The left subplot is a histogram of the 'total_bill' variable from the 'tips' dataset, with bars representing the frequency distribution of total bills. The x-axis is labeled 'total_bill', and the y-axis represents the count of occurrences. The right subplot is an empty scatter plot with a single blue dot located at the coordinates (1, 1). The x-axis ranges from 0.96 to 1.04, and the y-axis ranges from 0.96 to 1.04. The overall figure lacks a title, which is expected to be 'Test title' based on the code provided in the issue description. This missing title is the reported issue with the seaborn objects API when plotting on subfigures."
+            }
+        ]
+    },
+    {
+        "instance_id": "mwaskom__seaborn-3217",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "A histogram plot with a logarithmic scale on the x-axis. The x-axis is labeled 'total_bill' and ranges from 10^1 to 10^2. The y-axis represents the frequency count and ranges from 0 to 140. There are three bars in the histogram: one at the lower end of the x-axis, one at the middle, and one at the higher end. The bar at the middle is the tallest, indicating a higher frequency count compared to the other two bars."
+            },
+            {
+                "image_id": "2",
+                "description": "Another histogram plot with a logarithmic scale on the x-axis. The x-axis is labeled 'total_bill' and ranges from 10^1 to 10^2. The y-axis represents the frequency count and ranges from 0 to 70. There are eight bars in the histogram, with the tallest bar located towards the middle of the x-axis. The bars are evenly spaced, and the frequency count decreases as the x-axis value increases."
+            },
+            {
+                "image_id": "3",
+                "description": "A histogram plot with a logarithmic scale on the x-axis. The x-axis is labeled 'total_bill' and ranges from 10^1 to 10^2. The y-axis represents the frequency count and ranges from 0 to 140. There are three bars in the histogram: one at the lower end of the x-axis, one at the middle, and one at the higher end. The bar at the middle is the tallest, indicating a higher frequency count compared to the other two bars. This image appears to be a duplicate of the first image."
+            }
+        ]
+    },
+    {
+        "instance_id": "mwaskom__seaborn-3276",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "This image shows a heatmap with a color scale ranging from 0.0 to 1.0. The heatmap is divided into a grid of cells, each representing a value. The values are displayed in the cells, with a range from 0.00 to 0.10. The cells are colored according to the value, with lighter shades representing lower values and darker shades representing higher values. The heatmap is labeled with 'expected' at the top and 'predicted' at the bottom. The columns and rows are labeled with letters from A to Z and numbers from 0 to 10, respectively."
+            },
+            {
+                "image_id": "2",
+                "description": "This image shows a heatmap with a color scale ranging from 0.0 to 1.0. The heatmap is divided into a grid of cells, each representing a value. The values are displayed in the cells, with a range from 0.00 to 0.10. The cells are colored according to the value, with lighter shades representing lower values and darker shades representing higher values. The heatmap is labeled with 'expected' at the top and 'predicted' at the bottom. The columns and rows are labeled with letters from A to Z and numbers from 0 to 10, respectively."
+            }
+        ]
+    },
+    {
+        "instance_id": "mwaskom__seaborn-3394",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows three line plots side by side, each representing different data types for handling missing values. The x-axis is labeled 'date' and ranges from 0 to 3, while the y-axis is labeled 'value' and ranges from 1.0 to 2.0. The first plot, labeled 'type = no_NA', shows a line with a peak at date 1 and a valley at date 2, indicating no missing values. The second plot, labeled 'type = pd.NA', shows a line with a peak at date 0 and a valley at date 1, indicating that the axis order is reversed when using pd.NA to represent missing values. The third plot, labeled 'type = np.nan', shows a line with a peak at date 1 and a valley at date 2, similar to the first plot, indicating that np.nan does not cause the axis order to be reversed. This image is related to the issue of axis ordering reversal when plotting with pd.NA, as demonstrated in the reproducible example provided."
+            }
+        ]
+    },
+    {
+        "instance_id": "pydata__xarray-4182",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a Jupyter notebook cell with the output of the `xarray.tutorial.load_dataset('air_temperature').air` command. The output is an `xarray.DataArray` named 'air' with dimensions 'time', 'lat', and 'lon'. The data is displayed in a tabular format with partial values shown. The coordinates for 'lat', 'lon', and 'time' are also displayed, with 'lat' and 'lon' being float32 arrays and 'time' being a datetime64 array. The attributes section is collapsed."
+            },
+            {
+                "image_id": "2",
+                "description": ""
+            },
+            {
+                "image_id": "3",
+                "description": "This image is a close-up view of the data array output from the same Jupyter notebook cell as in image 1. It shows the full array data in a nested list format, with each element being a float32 value. The coordinates for 'lat', 'lon', and 'time' are displayed at the bottom, similar to image 1."
+            },
+            {
+                "image_id": "4",
+                "description": "The image shows a Jupyter notebook cell with the output of the `xarray.tutorial.load_dataset('air_temperature').air.chunk()` command. The output is an `xarray.DataArray` named 'air' with dimensions 'time', 'lat', and 'lon'. The data is displayed in a tabular format with partial values shown. The coordinates for 'lat', 'lon', and 'time' are also displayed, with 'lat' and 'lon' being float32 arrays and 'time' being a datetime64 array. The attributes section is collapsed. Additionally, there is a graphical representation of the chunked array structure on the right side of the output."
+            }
+        ]
+    },
+    {
+        "instance_id": "pylint-dev__pylint-4551",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a UML class diagram for a class named 'C'. The class has a single attribute 'a' with a type annotation of 'NoneType'. The diagram is represented in a box with three horizontal sections. The top section contains the class name 'C'. The middle section lists the attribute 'a' with its type annotation 'NoneType'. The bottom section is blank. This UML diagram appears to be the output generated by the pyreverse tool when analyzing the provided Python code example."
+            }
+        ]
+    },
+    {
+        "instance_id": "pydata__xarray-5682",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "instance_id": "scikit-learn__scikit-learn-13087",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a line plot comparing the calibration curves for different binning strategies in the context of a machine learning model's predicted probabilities. The x-axis represents the predicted probability on a logarithmic scale, ranging from 10^-5 to 10^0. The y-axis represents the fraction of positives, ranging from 0 to 1.0. Three different curves are plotted: a black line representing 10 log-space bins, a blue line representing sklearn's 10 bins, and an orange line representing sklearn's 100 bins. The black line is a smooth, diagonal line, indicating a well-calibrated model. The blue line is also relatively smooth but shows some deviation from the diagonal, especially at higher probabilities. The orange line is very noisy, with significant fluctuations, especially at higher probabilities, indicating poor calibration when using 100 bins. This visual comparison highlights the impact of different binning strategies on the calibration of predicted probabilities."
+            }
+        ]
+    },
+    {
+        "instance_id": "scikit-learn__scikit-learn-13618",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a plot comparing the results of a BayesianRidge regression with default hyperparameters (left) and with custom hyperparameters (right). The plot on the left shows a sinusoidal curve (blue line) representing the true function sin(2πx), a red line representing the predicted mean, and a shaded pink area representing the prediction standard deviation. The observed data points are shown as light blue circles. The predicted mean does not closely follow the true function, and the prediction standard deviation is wide, indicating high uncertainty. The plot on the right shows a similar setup but with the BayesianRidge regression using custom hyperparameters (α₀=1.0, λ₀=0.001). The predicted mean closely follows the true sinusoidal curve, and the prediction standard deviation is narrower, indicating improved fit and reduced uncertainty. The observed data points are again shown as light blue circles. The right plot demonstrates a better fit of the regression model to the true function compared to the left plot with default hyperparameters."
+            }
+        ]
+    },
+    {
+        "instance_id": "scikit-learn__scikit-learn-14067",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a histogram plot comparing the absolute coefficient error of the ARD Regressor when using two different versions of Scipy: 1.2.1 and 1.3.0. The x-axis represents the absolute coefficient error, ranging from 0.00 to 0.08. The y-axis represents the count of occurrences. The histogram for Scipy 1.2.1 is shown in blue, while the histogram for Scipy 1.3.0 is shown in orange. The plot shows that with Scipy 1.2.1, the errors are largely constrained to less than 0.01, while with Scipy 1.3.0, the errors range up to 0.05. Additionally, there are a few rare cases where the algorithm produces garbage results with Scipy 1.3.0."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-10048",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a screenshot of a tooltip that appears when hovering over a heading in a Sphinx-generated documentation. The tooltip text reads 'Permalink to this headline'. The background is dark, and the text is white. The heading itself is labeled 'Math' with a blue vertical line and a blue quotation mark icon next to it. The tooltip is positioned above the heading, indicating that it is the tooltip for the 'Math' heading."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-10097",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a section titled 'Symbols' from a document or manual. It lists various C++ functions and compiler options. The functions listed include '__bid_adddd3', '__bid_addsd3', '__bid_addtd3', '__dpd_adddd3', '__dpd_addsd3', and '__dpd_addtd3', all of which are C++ functions. The compiler options listed include '-Wall', '-Wauggest-attribute=[pure|const|noreturn|format|cold|malloc]', '-Wno-shift-overflow', '-Wno-shift-overflow2', '-Wno-shift-overflow3', '-Wshift-overflow', '-Wshift-overflow2 (non-default)', '-Wshift-overflow2=n (non-default)', '-Wshift-overflow3', '-Wshift-overflow3=n', '-Wshift-overflow=n', '-mmm', '-msse', and '-msse2'. The text in the image is related to the bug report about long option names overflowing in the Index when using xelatex."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-10191",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a text document with numbered footnotes. The document contains references to two footnotes, labeled as 'first footnote' and 'second footnote'. The first reference to each footnote is correctly numbered as [1] and [2] respectively. However, the second reference to the first footnote appears as a question mark (?), indicating an issue with the footnote numbering or hyperlinking. The second reference to the second footnote is correctly numbered as [2]. The text is formatted in a simple, clean style with a clear distinction between the main content and the footnote references. The issue described in the context suggests that there is a problem with the rendering of footnote marks in PDF output when footnotes are multiply referred to, leading to the appearance of a question mark instead of the expected number."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-11266",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a screenshot of a text document with two sections labeled 'before' and 'after'. The 'before' section contains a 'hint' directive in reStructuredText format with the text 'Hello this is a hint' and a note that the language was set to 'fr'. The 'after' section contains a 'seealso' directive with the text 'There should be a space before the colon but there isn't.' The issue being highlighted is the lack of a space before the colon in the 'seealso' directive when the language is set to French ('fr')."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows a screenshot of a text document with two sections labeled 'before' and 'after'. The 'before' section contains a 'hint' directive in reStructuredText format with the text 'Hello this is a hint' and a note that the language was set to 'fr'. The 'after' section contains a 'seealso' directive with the text 'There should be a space before the colon but there isn't.' The issue being highlighted is the lack of a space before the colon in the 'seealso' directive when the language is set to French ('fr')."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-11502",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a note in French that translates to: 'Note: This page is not yet completely translated (progress: 95%).' This note is likely used to inform users that the content on the page is partially translated, with 95% of the translation completed. The note is relevant to the issue context as it pertains to the feature request for marking partially translated pages in internationalized documentation. The note's presence indicates the need for a solution to highlight untranslated content and encourage user contributions to translation efforts."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-7615",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "Three side-by-side screenshots comparing the rendering of backslashes in RST, Docutils, and Sphinx. The first column shows the RST source code with backslashes, the second column shows the rendered output in Docutils, and the third column shows the rendered output in Sphinx. The RST source code includes lines with one to six backslashes. Docutils correctly renders the backslashes according to the RST specification, while Sphinx incorrectly renders four or more consecutive backslashes."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-7757",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a Python function signature for a function named 'foo' with parameters 'a', 'b', and 'c'. The parameter 'b' is marked as having a default value of 0, and 'c' is marked as having a default value of 1. The function signature is presented in a bold font, with the parameters 'a' and 'b' listed before the forward slash, indicating they are positional-only arguments. The parameter 'c' is listed after the forward slash, indicating it is a keyword-only argument. The image is meant to illustrate the expected behavior of displaying default values for positional-only arguments in a Sphinx-generated documentation."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-8028",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a screenshot of a Sphinx documentation page titled 'Welcome to test's documentation!'. It displays the documentation for a Python class named 'Test' from the module 'test_mod'. The class has an instance attribute 'a' of type 'int' and a class attribute 'test' also of type 'int' with a default value of 1. The screenshot includes the class definition, the docstring for the class, and the documentation for the attributes 'a' and 'test'. At the bottom, there is a navigation bar with links to the 'test_mod.Test.test' documentation and a link to the 'int' type documentation. The page is powered by Sphinx 3.1.2 and Alabaster 0.7.12, as indicated by the footer. This image is related to a Sphinx issue where instance attributes are omitted when using the autosummary directive, as described in the issue context."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-8056",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a rendered HTML output from a Python docstring. The text displayed is 'x2 (x1,) - Input arrays, description of x1, x2.' This indicates that the docstring is trying to describe multiple input parameters, x1 and x2, but the formatting appears to be incorrect, leading to a render error. The text is presented in a monospace font, typical of code or docstring outputs, and there is a bullet point preceding the text, suggesting it is part of a list or documentation section."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-8075",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a section of a document with references to figures. The section is titled 'References' and lists two types of figures: 'figure without caption' and 'figure with caption'. For 'figure without caption', it lists three types of references: plain, named, and numbered, each with an error message indicating issues in HTML and LaTeX. For 'figure with caption', it lists three types of references without errors. Below the text, there are two images of a scenic landscape with a sunset, a river, and mountains. The first image is labeled 'Fig. 2' with the caption 'This is some caption.' The second image is labeled 'Fig. 1' with the same caption."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows a section of a document with references to figures. The section is titled 'References' and lists two types of figures: 'figure without caption' and 'figure with caption'. For 'figure without caption', it lists three types of references: plain, named, and numbered, each with an error message indicating issues in HTML and LaTeX. For 'figure with caption', it lists three types of references without errors. Below the text, there are two images of a scenic landscape with a sunset, a river, and mountains. The first image is labeled 'Fig. 1' with the caption 'This is some caption.' The second image is labeled 'Fig. 2' with the same caption."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-8265",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a screenshot of a documentation page for a Python library, specifically focusing on the documentation for the `add_lines` method. The page is divided into two main sections. On the left side, there is a navigation menu with various headings and subheadings related to plotting and documentation sections. The right side of the image displays the detailed documentation for the `add_lines` method, including its parameters, return value, and return type. The parameters listed are `lines`, `color`, `width`, `label`, and `name`. The `color` parameter is incorrectly rendered as `color=1, 1, 1` instead of `color=(1, 1, 1)`, which is the expected format. This discrepancy is the subject of the reported bug, as mentioned in the issue context."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-8278",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a code snippet with a function definition for `lcd.print`. The function takes four parameters: `msg`, `x`, `y`, and `color`. The `color` parameter has a default value of `0xffffff`, which is specified in hexadecimal format. The code snippet is written in a monospace font, indicating it is likely part of a documentation or code example."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-8620",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a screenshot of a rendered HTML output for a compound keystroke representation. The text displayed is 'Shift + X', enclosed within a single `<kbd>` element. The `<kbd>` element is styled with a border and padding, giving it a box-like appearance. The text inside the `<kbd>` element is in a monospace font, indicating that it represents a keyboard input. The background of the image is white, and the text is in black, making the keystroke representation clear and distinct. This image is relevant to the issue as it demonstrates the current styling of compound keystrokes in HTML, which the reporter finds problematic due to the lack of differentiation between the parent container `<kbd>` element and the child `<kbd>` elements representing individual keystrokes."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-8621",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows three keyboard definitions with their corresponding incorrect HTML output. The first definition is ':kbd:`-`', which results in an HTML structure with two empty `kbd` elements around the dash symbol. The second definition is ':kbd:`+`', leading to an HTML structure similar to the first, with two empty `kbd` elements around the plus symbol. The third definition is ':kbd:`Shift-+`', producing an HTML structure with the 'Shift' text followed by a dash, an empty `kbd` element, a plus symbol, and another empty `kbd` element. These structures are incorrect as they do not accurately represent the intended keystrokes."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-8638",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a screenshot of a webpage displaying documentation for a Python module named 'demo'. The title 'demo package' is at the top, followed by a heading 'Module contents'. Below the heading, there is a class definition for 'demo.foo' with a single parameter 'a' and a base class 'object'. There is a comment 'Some headers line' followed by a section labeled 'Variables' with a variable named 'somevar' and a brief description 'some text'. Below this, there is a detailed docstring for the variable 'somevar'. The text 'demo.somevar = 1' is shown, indicating the assignment of the value 1 to the variable 'somevar'. At the bottom, there is a note about documentation for this variable. The text is presented in a structured format typical of Python documentation generated by tools like Sphinx."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-8658",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a documentation section for a Python function named `sign_gpg`. The function description explains that it creates a signature over signable with gpg and adds it to signatures. It uses the UTF-8 encoded canonical JSON byte representation of the signable attribute to create signatures deterministically. The parameters section lists two optional parameters: `gpg_keyid`, which is a keyid used to identify a local gpg signing key, and `gpg_home`, which is a path to the gpg home directory. The Raises section lists several exceptions that can be raised by the function. The Side Effects section is highlighted in red, indicating that it calls the system gpg command in a subprocess. The Returns section specifies that the function returns the signature in a format defined by `securesystemslib.formats.GPG_SIGNATURE_SCHEMA`."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-9229",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a screenshot of a rendered HTML documentation page for a Python module named 'file'. The page is divided into two main sections. On the left side, there is a navigation menu with the heading 'Navigation' and a list of contents, which includes 'file' and a 'Quick search' bar with a 'Go' button. On the right side, the main content area displays the module documentation. The module name 'file module' is prominently displayed at the top. Below the module name, there are three type alias definitions: 'file.FileContents', 'file.FileOp', and 'file.ScaffoldOpts'. Each type alias is described with a brief explanation. For example, 'file.FileContents' is defined as a Union of str and NoneType, with a note that when the file content is None, the file should not be written to disk. The 'file.FileOp' is an alias of typing.Callable, and 'file.ScaffoldOpts' is an alias of typing.Dict. The text is formatted in a way that distinguishes between the type alias names, their definitions, and their explanations, using different font sizes and styles."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-9230",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a code snippet with a Python method definition. The method is named `put_object` and takes two parameters: `put_object_body` and `**kwargs`. The docstring describes the `put_object_body` parameter as a required stream type for the Put Object body and the `opc_meta` parameter as an optional dictionary of string keys and values, with a note that 'opc-meta-' will be appended to each dict key before it is sent to the server. The code snippet includes a conditional check for the presence of 'opc_meta' in `kwargs`, and if present, assigns it to `opc_meta` and prints both `opc_meta` and `put_object_body`."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows a rendered documentation for the `put_object` method. The documentation lists the method name and parameters. The `put_object_body` parameter is described as a required stream type for the Put Object body. The `opc_meta` parameter is described as an optional dictionary of string keys and values, with a note that 'opc-meta-' will be appended to each dict key before it is sent to the server. The rendering appears to be incorrect, as the parameter type is shown as 'str) opc_meta (dict(str,)' instead of 'opc_meta (dict(str,str))'."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-9289",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a section of rendered documentation from a Sphinx project. The heading 'Package' is displayed in a large, bold font. Below the heading, there are two class definitions listed: 'class package.A' and 'class package.B(a)'. The second class definition includes a parameter 'a' with a type hint in parentheses, which is linked to 'package.A'. The text is presented in a clean, readable format typical of Sphinx-generated documentation, with a light background and dark text."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-9320",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a terminal window with a command prompt and a series of commands and responses. The user is in a directory named 'base' and has run the 'ls' command, listing the files and directories in the current directory, which include '_build', 'conf.py', 'index.rst', 'make.bat', 'Makefile', '_static', and '_templates'. The user then runs the command 'sphinx-quickstart', which is a utility for setting up a new Sphinx project. The utility prompts the user to enter values for various settings, starting with the root path. The user selects the current directory as the root path, but an error message appears stating 'Error: an existing conf.py has been found in the selected root path. sphinx-quickstart will not overwrite existing Sphinx projects.' The utility then prompts the user to enter a new root path name or press Enter to exit. The user presses Enter, but instead of exiting, the utility prompts again with the message 'Please enter a valid path name.' This indicates a bug where the utility does not properly handle the case where the user presses Enter to exit the prompt."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-9464",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a screenshot of a web page with documentation for a Python module named 'bar'. The page is rendered using Sphinx and Alabaster theme, as indicated by the footer. The documentation includes two function signatures: 'bar.foo(baz: dict) -> list' and 'bar.bar(baz: Dict[str, str]) -> List[str]'. The 'foo' function has a parameter 'baz' of type 'dict' and returns a 'list'. The 'bar' function has a parameter 'baz' of type 'Dict[str, str]' and returns a 'List[str]'. The page also includes a quick search bar and navigation links. The issue reported in the context is about PEP 585 type hints not being rendered correctly by Sphinx, specifically the generic type annotation 'list[str]' being displayed as 'list' instead of 'list[str]'."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-9673",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a documentation page for the `tuxemon.event.conditions.button_pressed` module. It includes a class definition for `ButtonPressedCondition`, which inherits from `EventCondition`. The class description indicates that it checks if a particular key was pressed, with 'K_RETURN' being the currently supported key. There is a section on script usage with an example: `is button_pressed <button>`. The script parameters section mentions a parameter `button` which is a button/intention key, exemplified by 'K_RETURN'. The `test(session, condition)` method is described to check if a particular key was pressed, with parameters `session` and `condition`, and it returns whether the key was pressed or not. There is a note at the bottom indicating 'Missing type', suggesting an issue with type documentation."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-9698",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows an index page with two entries under the letter 'B'. The first entry is 'bar() (Foo property)' and the second entry is 'baz (Foo property)'. The text is displayed in a simple, clean format with the index heading 'Index' at the top and the letter 'B' in bold below it. The entries are listed in two columns, with 'bar() (Foo property)' on the left and 'baz (Foo property)' on the right. The parentheses around 'bar()' indicate that it is a method, while the lack of parentheses around 'baz' suggests it is a property. This image is relevant to the issue as it demonstrates the incorrect formatting of the index entry for the 'bar' method, which should not have parentheses around it."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-9797",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a portion of the code from the `spam.py` module. It displays the class hierarchy with `spam.Child` inheriting from `spam.Parent`. The `method` classmethod is defined in both the `Parent` and `Child` classes. The `Parent` class's `method` is annotated to return an integer and has a docstring explaining that it returns an integer. The `Child` class redefines the `method` without providing a docstring. This image is relevant to the issue as it demonstrates the code structure where the documentation inheritance problem is observed."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-9982",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a terminal output with a series of build warnings related to Sphinx documentation build. The warnings are displayed in different colors: light red and dark red. The first two warnings are about documents or sections not beginning with a transition, and they are displayed in dark red. The next two warnings are about image files not being readable, and they are displayed in light red. The warnings are related to files in the 'dockstore-documentation' repository, specifically 'docker_instructions.md' and 'gh-app-reg-1.png'. The terminal output also includes the command used to clone the repository and the steps to reproduce the issue, which involves checking out a specific branch, installing requirements, and running the Sphinx build command. The output ends with a message indicating that no outdated files were found."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-9987",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a section of documentation for a Python project. It includes the title 'Welcome to test's documentation!' followed by two class definitions: `class test.WithPositional(a, /)` and `class test.WithoutPositional(a)`. Both classes are described as 'A class'. Below the second class definition, there is a highlighted section with the text 'a' and 'A property', indicating that this is a property of the `test.WithoutPositional` class. The text is presented in a clean, readable format with the property 'a' being emphasized by a red circle."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-9997",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a screenshot of a webpage displaying the documentation for a Python function named `func` from a module called `project`. The function takes two parameters: `x` of type `Literal['a', 'b']` and `y` of type `int`. The parameter `x` is described as 'The x.' and `y` as 'The y.'. The screenshot highlights the issue where the type hint for `x`, `Literal['a', 'b']`, does not generate a link to the `typing.Literal` documentation in CPython's docs, unlike the `int` type hint for `y` which does create a link. This is the visual representation of the bug described in the issue, where parametrized types in type hints do not generate links in the Sphinx-generated documentation."
+            }
+        ]
+    },
+    {
+        "instance_id": "sphinx-doc__sphinx-9999",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a screenshot of a documentation page with a listing of file extensions and their corresponding descriptions. The file extensions are listed in a code block with a light background and a border. The text is in a monospace font. The file extensions include various C++ and Objective-C++ source code and header files. The descriptions explain the purpose of each file type, such as needing preprocessing or being header files. The page footer indicates it is powered by Sphinx 4.3.1 and Alabaster 0.7.12, and there is a link to the page source."
+            },
+            {
+                "image_id": "2",
+                "description": "This image is similar to the first one, showing the same listing of file extensions and their descriptions. The layout and content are identical, with the file extensions and descriptions presented in a code block with a light background and a border. The text is in a monospace font. The page footer also indicates it is powered by Sphinx 4.3.1 and Alabaster 0.7.12, and there is a link to the page source."
+            },
+            {
+                "image_id": "3",
+                "description": "The image displays a listing of file extensions and their descriptions in a code block with a light background and a border. The file extensions include various C++ and Objective-C++ source code and header files. The descriptions explain the purpose of each file type, such as needing preprocessing or being header files. The text is in a monospace font. The page footer indicates it is powered by Sphinx 4.3.1 and Alabaster 0.7.12, and there is a link to the page source."
+            },
+            {
+                "image_id": "4",
+                "description": "This image shows a screenshot of a documentation page with a listing of file extensions and their descriptions. The file extensions are listed in a code block with a light background and a border. The text is in a monospace font. The file extensions include various C++ and Objective-C++ source code and header files. The descriptions explain the purpose of each file type, such as needing preprocessing or being header files. The page footer indicates it is powered by Sphinx 4.3.1 and Alabaster 0.7.12, and there is a link to the page source."
+            },
+            {
+                "image_id": "5",
+                "description": "The image is similar to the previous ones, showing the same listing of file extensions and their descriptions in a code block with a light background and a border. The file extensions include various C++ and Objective-C++ source code and header files. The descriptions explain the purpose of each file type, such as needing preprocessing or being header files. The text is in a monospace font. The page footer indicates it is powered by Sphinx 4.3.1 and Alabaster 0.7.12, and there is a link to the page source."
+            },
+            {
+                "image_id": "6",
+                "description": "This image shows a listing of file extensions and their descriptions in a code block with a light background and a border. The file extensions include various C++ and Objective-C++ source code and header files. The descriptions explain the purpose of each file type, such as needing preprocessing or being header files. The text is in a monospace font. The page footer indicates it is powered by Sphinx 4.3.1 and Alabaster 0.7.12, and there is a link to the page source."
+            },
+            {
+                "image_id": "7",
+                "description": "The image displays a listing of file extensions and their descriptions in a code block with a light background and a border. The file extensions include various C++ and Objective-C++ source code and header files. The descriptions explain the purpose of each file type, such as needing preprocessing or being header files. The text is in a monospace font. The page footer indicates it is powered by Sphinx 4.3.1 and Alabaster 0.7.12, and there is a link to the page source."
+            },
+            {
+                "image_id": "8",
+                "description": "This image shows a screenshot of a documentation page with a listing of file extensions and their descriptions. The file extensions are listed in a code block with a light background and a border. The text is in a monospace font. The file extensions include various C++ and Objective-C++ source code and header files. The descriptions explain the purpose of each file type, such as needing preprocessing or being header files. The page footer indicates it is powered by Sphinx 4.3.1 and Alabaster 0.7.12, and there is a link to the page source."
+            }
+        ]
+    },
+    {
+        "instance_id": "sympy__sympy-11787",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a graph of a mathematical function plotted against two variables, t and f(t). The x-axis represents the variable t, ranging from -1.0 to 1.0. The y-axis represents the function f(t), ranging from -0.4 to 0.8. The function appears to be a smooth curve that starts at a positive value, decreases to a minimum around t = 0, and then increases sharply, approaching a vertical asymptote near t = 1. The curve suggests that the function has a root (crosses the x-axis) at a value of t slightly greater than 0.7, which is consistent with the issue description stating that the root should be around 0.7."
+            }
+        ]
+    },
+    {
+        "instance_id": "sympy__sympy-11788",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a Jupyter notebook cell with Python code using SymPy and SymPy's Continuum Mechanics module. The code imports necessary modules, defines symbols, initializes printing, creates a beam object, applies loads to the beam, and solves for reaction loads. The output displays the reaction loads as a dictionary with keys 'M_a' and 'R_a' and their corresponding values 'M_a' and 'R_a'. The next cell shows the beam's load expression with singularity functions, but the powers of the singularity functions do not print correctly in the qtconsole."
+            }
+        ]
+    },
+    {
+        "instance_id": "sympy__sympy-13264",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a complex mathematical expression involving multiple variables (η, ξ, ϕ) and various mathematical operations such as addition, subtraction, multiplication, division, and exponentiation. The expression is quite long and spans across multiple lines, indicating a high level of complexity. The variables are used in different combinations and powers, suggesting a sophisticated mathematical or physical formula. The presence of multiple variables and operations indicates that this expression could be part of a larger mathematical or scientific problem, possibly related to calculus, physics, or engineering."
+            },
+            {
+                "image_id": "2",
+                "image_description": "The image displays a simplified mathematical expression involving the variables η and ξ. The expression is significantly shorter than the one in the first image, indicating that it has been simplified. The expression consists of a fraction with a numerator of 2η(η - ξ)²(η + ξ)² and a denominator of a²(η⁶ - 3η⁴ξ² + 3η²ξ⁴ - ξ⁶). This simplified form suggests that the original expression has undergone some form of algebraic manipulation or simplification, reducing its complexity while maintaining its mathematical integrity."
+            },
+            {
+                "image_id": "3",
+                "image_description": "The image shows a further simplified mathematical expression involving the variables η and ξ. The expression is even shorter than the one in the second image, indicating that it has been simplified further. The expression consists of a fraction with a numerator of 2η and a denominator of a²(η² - ξ²). This ultimate simplified form suggests that the original expression has undergone multiple rounds of algebraic manipulation or simplification, resulting in a highly condensed and simplified mathematical representation."
+            }
+        ]
+    },
+    {
+        "instance_id": "sympy__sympy-13840",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a code snippet using SymPy, a Python library for symbolic mathematics. The code defines a symbolic variable `y` using `symbols('y')`. It then calculates the minimum of `x` and `y` using `min(x, y)`. The next part of the code defines an expression `expr1` as the maximum of `1` and `y` using `expr1 = Max(1, y)`. The expression `expr1` is then printed, followed by the maximum of `1` and `y` using `max(1, y)`. Finally, the code attempts to convert `expr1` to JavaScript using `jscode(expr1)`, but it results in an error message: 'Not supported in Javascript:\n// Max\nMax(1, y)'. This suggests that the conversion to JavaScript is not supported for the `Max` function used in the expression."
+            }
+        ]
+    },
+    {
+        "instance_id": "sympy__sympy-15304",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a Jupyter notebook cell with Python code using the SymPy library for continuum mechanics, specifically the Beam module. The code defines symbols for Young's modulus (E), moment of inertia (I), and reaction forces (R and M). It creates a beam object and applies boundary conditions for deflection and slope. The beam is subjected to various loads, including a force of order 2, and the reaction loads are solved for. The output displays the reaction forces M and R as fractions. To the right of the code, there is a graphical representation of the beam with applied loads and deflection, showing a quadratic curve labeled 'x^2' and arrows indicating the direction and magnitude of the loads. The beam is divided into two segments, with lengths labeled '1' and '2'. The issue mentioned in the text suggests a problem with the Beam module when using forces of order greater than 1, as the reaction force R does not remain constant when changing the beam's length, which the user believes is due to an issue in the load equation formulation."
+            }
+        ]
+    },
+    {
+        "instance_id": "sympy__sympy-15625",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "This image shows a Jupyter notebook cell with Python code executed using SymPy. The code imports SymPy as `sp`, initializes SymPy's printing, and defines a symbol 'A'. The output of the cell displays the symbol 'A' in a mathematical format, indicating that SymPy's printing is active. This is relevant to the issue because it demonstrates the use of SymPy's printing capabilities, which are affected by the LaTeX conversion problem described in the issue."
+            },
+            {
+                "image_id": "2",
+                "image_description": "This image is identical to the first image, showing the same Jupyter notebook cell with Python code executed using SymPy. The code imports SymPy as `sp`, initializes SymPy's printing, and defines a symbol 'A'. The output of the cell displays the symbol 'A' in a mathematical format. This image reinforces the context of the issue, which involves the conversion of Jupyter notebook content to LaTeX and the resulting errors due to the wrapping of mathematical expressions."
+            }
+        ]
+    },
+    {
+        "instance_id": "sympy__sympy-15976",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "This image shows the mathematical expression (x^3 + xz) rendered in a format that appears to be MathML. The expression is displayed with 'x' raised to the power of 3 and added to the product of 'x' and 'z'. The text is presented in a serif font, and the superscript '3' is clearly visible above and to the right of the 'x'. The plus sign and the 'z' are also clearly displayed. This image is likely intended to demonstrate the correct rendering of the mathematical expression when using the variable 'x' instead of 'x2' in the code provided."
+            },
+            {
+                "image_id": "2",
+                "image_description": "This image shows the mathematical expression (x^3 + xz) rendered in a format that appears to be MathML. The expression is displayed with 'x' raised to the power of 3 and added to the product of 'x' and 'z'. The text is presented in a serif font, and the superscript '3' is clearly visible above and to the right of the 'x'. The plus sign and the 'z' are also clearly displayed. This image is likely intended to demonstrate the correct rendering of the mathematical expression when using the variable 'x' instead of 'x2' in the code provided."
+            }
+        ]
+    },
+    {
+        "instance_id": "sympy__sympy-16003",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "This image shows a mathematical expression in MathML format. The expression represents a derivative of a function f(x, y, z) with respect to the variables x, z, x, z, z, and y. The derivative is written in a tabular format with the partial derivative symbol (partial) followed by the function f(x, y, z) and then the variables x, z, x, z, z, and y listed in separate rows. Each variable is preceded by the partial derivative symbol. The expression is intended to represent the derivative of f with respect to x, z, x, z, z, and y, but the formatting appears to be incorrect, with the variables not aligned properly and the partial derivative symbols not clearly indicating the order of differentiation."
+            },
+            {
+                "image_id": "2",
+                "description": "This image shows a mathematical expression in LaTeX format. The expression represents a derivative of a function f(x, y, z) with respect to the variables x, z, x, z, z, and y. The derivative is written in a compact format with the partial derivative symbol (partial) followed by the function f(x, y, z) and then the variables x, z, x, z, z, and y listed in a single line. The expression is intended to represent the derivative of f with respect to x, z, x, z, z, and y, and it appears to be correctly formatted with the variables aligned properly and the partial derivative symbols clearly indicating the order of differentiation."
+            },
+            {
+                "image_id": "3",
+                "description": "This image is identical to image 1 and shows the same mathematical expression in MathML format. The expression represents a derivative of a function f(x, y, z) with respect to the variables x, z, x, z, z, and y. The derivative is written in a tabular format with the partial derivative symbol (partial) followed by the function f(x, y, z) and then the variables x, z, x, z, z, and y listed in separate rows. Each variable is preceded by the partial derivative symbol. The expression is intended to represent the derivative of f with respect to x, z, x, z, z, and y, but the formatting appears to be incorrect, with the variables not aligned properly and the partial derivative symbols not clearly indicating the order of differentiation."
+            },
+            {
+                "image_id": "4",
+                "description": "This image is identical to image 2 and shows the same mathematical expression in LaTeX format. The expression represents a derivative of a function f(x, y, z) with respect to the variables x, z, x, z, z, and y. The derivative is written in a compact format with the partial derivative symbol (partial) followed by the function f(x, y, z) and then the variables x, z, x, z, z, and y listed in a single line. The expression is intended to represent the derivative of f with respect to x, z, x, z, z, and y, and it appears to be correctly formatted with the variables aligned properly and the partial derivative symbols clearly indicating the order of differentiation."
+            }
+        ]
+    },
+    {
+        "instance_id": "sympy__sympy-17067",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a mathematical expression involving trigonometric functions and their simplification using SymPy. The expression is initially defined as `expr` and then simplified using the `simplify` function. The original expression is a complex fraction with multiple terms involving sine, cosine, and tangent functions of alpha, beta, and gamma. The simplified expression is `-2*cos(alpha)*cos(beta)/sin(2*beta)`. The issue context suggests that this simplified result is incorrect and should be `-cos(alpha)*cot(beta)` instead. The image is a screenshot of a SymPy live calculation, demonstrating the incorrect simplification result."
+            }
+        ]
+    },
+    {
+        "instance_id": "sympy__sympy-17115",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a screenshot of a SymPy Live session with a Python code snippet and an error message. The code snippet includes the following lines:\n\n```python\n>>> type(Contains(x, S.Integers).as_set())\n\n>>> cond = And(Le(x, 6), Ge(x, 1), S.Integers.contains(x))\n>>> p2 = Piecewise((S(1), cond), (S(0), True))\n```\n\nThe error message that follows is a traceback indicating a `TypeError` with the message 'Input args to Union must be Sets'. The traceback includes several lines of Python code and file paths, indicating the location of the error within the SymPy library. The error occurs during the evaluation of a `Piecewise` expression, specifically when attempting to convert a condition to a set and then to a relational expression. The error message suggests that the input arguments to a `Union` operation must be sets, but the current input is not of the correct type."
+            }
+        ]
+    },
+    {
+        "instance_id": "sympy__sympy-18922",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a code snippet and its output in a Jupyter notebook cell. The code imports the `plot` function from the `sympy` module and then calls `plot(3)`. Below the code, there is a plot with the x-axis ranging from -10 to 10 and the y-axis ranging from approximately 2.95 to 3.00. The plot displays a horizontal line at y=3, but the x-axis is incorrectly positioned at y=3 instead of being at the bottom of the plot. The output of the cell is a reference to the `sympy.plotting.plot.Plot` object with a memory address."
+            }
+        ]
+    },
+    {
+        "instance_id": "sympy__sympy-24723",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image displays the probability density function (PDF) of the Matrix Normal Distribution. The function is given as p(X | M, U, V) = exp(-1/2 * tr[V^(-1)(X - M)^T U^(-1)(X - M)]) / (2π)^(np/2) |V|^(n/2) |U|^(p/2), where X is a matrix variable, M is the mean matrix, U is the row covariance matrix, and V is the column covariance matrix. The expression involves the exponential function, the trace of a matrix, and determinants of matrices. This image is relevant to the issue because it shows the correct mathematical form of the PDF that the user expects from the Sympy library."
+            }
+        ]
+    },
+    {
+        "instance_id": "plotly__plotly.py-4083",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "This image shows a screenshot of a pandas DataFrame with six columns visible: 'x', 'y', 'label', 'freq', 'similarity', and 'size'. The 'most_similar_kt' column is highlighted in pink, indicating it is the focus of the issue. The DataFrame contains numerical data and labels, with the 'most_similar_kt' column containing values like 'satellite_2016' and 'satellite_2017'."
+            },
+            {
+                "image_id": "2",
+                "description": "This image is a scatter plot with a color gradient representing the 'similarity' column from the DataFrame. The plot uses a black background with colored dots distributed across the x and y axes, which range from 4 to 12 and 2 to 8, respectively. The color gradient on the right side of the plot indicates the 'similarity' values, ranging from 0 to 1, with colors transitioning from purple to yellow. The plot is labeled as 'Plotly Express strange hover_data ValueError' and is related to the issue of mapping the 'most_similar_kt' column to hover_data."
+            }
+        ]
+    },
+    {
+        "instance_id": "plotly__plotly.py-2600",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a scatter plot with marginal histograms. The scatter plot compares actual values on the x-axis against predicted values on the y-axis. The data points are represented by blue dots. A diagonal line is drawn from the bottom left to the top right, indicating the ideal scenario where predicted values perfectly match actual values. The marginal histograms are displayed on the top and right sides of the scatter plot, showing the distribution of actual and predicted values, respectively. The x-axis is labeled 'actual' and ranges from 0 to 30, while the y-axis is labeled 'prediction' and also ranges from 0 to 30. The code snippet above the plot indicates the use of the `px.scatter` function from the Plotly library, with parameters specifying the model predictions, actual values, and the addition of marginal histograms and a diagonal line."
+            }
+        ]
+    },
+    {
+        "instance_id": "plotly__plotly.py-2591",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a sunburst chart visualizing data from the Gapminder dataset for the year 2007. The chart is divided into four main sectors representing continents: Asia, Africa, Europe, and Americas. Each continent sector is further divided into individual countries. The color of each sector and country is determined by the 'lifeExp' (life expectancy) column, with a color scale ranging from dark blue (representing higher life expectancy) to dark red (representing lower life expectancy). The chart uses the 'RdBu' color continuous scale. The issue reported is that the color of a sector should represent the average life expectancy of its children (countries), but it appears to be showing the sum of life expectancy instead."
+            }
+        ]
+    },
+    {
+        "instance_id": "plotly__plotly.py-1966",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a scatter plot with multiple facets, showing the relationship between 'total_bill' and 'tip' across different days and times. The x-axis is labeled 'total_bill' and ranges from 8 to 16. The y-axis is labeled 'tip' and ranges from 1 to 6. There are four facets, each representing a different day: Sunday, Saturday, Thursday, and Friday. Each facet is further divided into two sub-facets, representing 'Lunch' and 'Dinner' times. The data points are plotted as blue dots. The labels for 'day' and 'time' are highlighted in red boxes, indicating that they are not respecting the labels keyword argument as intended in the code sample provided."
+            }
+        ]
+    },
+    {
+        "instance_id": "networkx__networkx-6503",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a code editor with a Python script named `demo2.py` open. The script imports the `networkx` library and uses it to create two full r-ary trees. It then joins these trees and prints the nodes of the resulting graph. The terminal output below the code indicates an error when trying to join the trees with a label attribute, specifically a `StopIteration` error. The error message and traceback suggest that the issue lies in the `networkx` library's `join` function, which is unable to handle the label attribute correctly. The terminal also shows the command used to run the script and the path to the script on the user's machine."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows the expected output of the `demo2.py` script when it is executed without errors. The output displays two lists of tuples, each representing the nodes of the joined trees with their respective old values. The first list shows the nodes with their old labels, and the second list shows the nodes with their old values after the join operation. This output is relevant to the issue described in the context, as it demonstrates the expected behavior of the `join` function when it correctly handles the label attribute."
+            }
+        ]
+    },
+    {
+        "instance_id": "networkx__networkx-6098",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "A directed graph with three nodes and three directed edges. The nodes are represented as blue circles. The edges are directed arcs with arrows pointing from one node to another. The graph is laid out in a way that one node is at the top, another node is at the bottom, and the third node is to the right of the top node. The edges connect the top node to the right node, the right node to the bottom node, and the bottom node to the top node, forming a directed cycle."
+            },
+            {
+                "image_id": "2",
+                "description": "An undirected graph with three nodes and three undirected edges. The nodes are represented as blue circles. The edges are straight lines connecting the nodes. The graph is laid out in a triangular formation, with one node at each corner of the triangle. Each pair of nodes is connected by a single undirected edge."
+            }
+        ]
+    },
+    {
+        "instance_id": "networkx__networkx-5616",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a directed graph with four nodes. Three of the nodes are connected in a cycle, forming a triangle with directed edges. The fourth node is isolated, meaning it has no incoming or outgoing edges. This graph is used to demonstrate the functionality of the `has_eulerian_path` method for directed graphs, where the presence of an isolated node does not affect the determination of an Eulerian path."
+            },
+            {
+                "image_id": "2",
+                "image_description": "The image depicts an undirected graph with four nodes. Three of the nodes are connected in a triangle, forming a cycle. The fourth node is isolated, meaning it has no edges connecting it to the rest of the graph. This graph is used to illustrate the inconsistency in the implementation of the `has_eulerian_path` method for undirected graphs, where the presence of an isolated node causes the method to incorrectly determine that there is no Eulerian path."
+            }
+        ]
+    },
+    {
+        "instance_id": "networkx__networkx-5354",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a simple graph layout with five nodes arranged in a spiral pattern. The nodes are represented as blue circles connected by black lines. The layout appears to be non-equidistant, with the distances between the nodes varying, especially noticeable between the first and second nodes. This visual representation highlights the issue described in the bug report, where the `equidistant=True` parameter of the `nx.spiral_layout` function is not enforcing equal distances between all nodes, particularly affecting the first node differently from the others."
+            }
+        ]
+    },
+    {
+        "instance_id": "networkx__networkx-5058",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a traceback of a KeyError exception that occurred while attempting to write a graph generated by the stochastic_block_model function from the NetworkX library to a GraphML file. The traceback starts with the line 'KeyError' and includes the path to the file where the error occurred, which is '/var/folders/6z/4cnrcv0j5ksgqx_1tdhyb_zm0000gn/T/ipykernel_10061/1557278252.py'. The code snippet that caused the error is highlighted, showing the line 'G = nx.stochastic_block_model(community_sizes, community_probs)' and the subsequent call to 'nx.write_graphml(G, 'file_name.graphml')'. The traceback continues with the line numbers and code from the NetworkX library, specifically from the 'decorators.py' and 'readwrite/graphml.py' files, indicating the internal functions and methods that were involved in the error. The error message at the bottom of the image states 'KeyError: <class 'list'>', suggesting that the error is related to a list object."
+            }
+        ]
+    },
+    {
+        "instance_id": "networkx__networkx-4378",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a simple graph with two nodes connected by a single edge. The nodes are represented by blue circles, and the edge is a straight line connecting the two nodes. The graph is enclosed within a rectangular boundary, indicating the plotting area. The nodes are positioned at the corners of the rectangle, with one node at the bottom left and the other at the top right. The edge runs diagonally from the bottom left node to the top right node. This image represents the expected behavior of the `draw_networkx_edges` function when using the `nodelist` keyword argument to specify which nodes to draw edges for."
+            },
+            {
+                "image_id": "2",
+                "description": "The image depicts a graph with three nodes, where two nodes are connected by an edge, and the third node is not connected to any other nodes. The nodes are represented by blue circles, and the edge is a straight line connecting the two nodes. The graph is enclosed within a rectangular boundary, indicating the plotting area. The nodes are positioned as follows: one node is at the bottom left, another node is at the top right, and the third node is in the middle, slightly to the right of the center. The edge runs diagonally from the bottom left node to the top right node. This image represents the actual behavior of the `draw_networkx_edges` function when using the `nodelist` keyword argument to specify which nodes to draw edges for, where the edge is still drawn even though one of the nodes is not included in the `nodelist`."
+            }
+        ]
+    },
+    {
+        "instance_id": "networkx__networkx-3764",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a graph titled 'TS Cross References - Undirected'. The graph is a simple line plot with a single horizontal line extending from left to right across the image. The line starts from a dense cluster of points on the left side, which appears as a small black cloud due to the high concentration of points. The line then extends horizontally to the right, with a few scattered points along its path. The background is a grid with light gray lines, providing a reference for the positioning of the points and the line. The overall appearance suggests a visualization of cross-references in an undirected network, where the dense cluster on the left may represent a central node with many connections, and the line extending to the right indicates the spread of these connections."
+            }
+        ]
+    },
+    {
+        "instance_id": "vega__altair-2785",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "A scatter plot with 'Horsepower' on the x-axis and 'Miles_per_Gallon' on the y-axis. The plot shows data points colored by origin: blue for Europe, orange for Japan, and red for the USA. The data points are distributed across the plot, with a concentration of points in the middle range of horsepower and miles per gallon. The plot has a grid background and a legend on the right side indicating the color coding for the origin categories."
+            },
+            {
+                "image_id": "2",
+                "image_description": "A scatter plot with 'Horsepower' on the x-axis and 'Miles_per_Gallon' on the y-axis. The plot shows data points colored by origin: blue for Europe, orange for Japan, and red for the USA. The data points are distributed across the plot, with a concentration of points in the middle range of horsepower and miles per gallon. The plot has a grid background and a legend on the right side indicating the color coding for the origin categories."
+            }
+        ]
+    },
+    {
+        "instance_id": "vega__altair-1092",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "A black and white image of a vertical line with a small square at the top, resembling a simple representation of a flagpole with a flag. This image is likely used to illustrate the expected output of the Altair chart when the `format` property is correctly applied to the `InlineData` object in the provided Python code snippet."
+            },
+            {
+                "image_id": "2",
+                "description": "A black and white image of a horizontal line with two vertical lines extending downwards from it, resembling a simple representation of a table or a bar chart. This image is likely used to illustrate the actual output of the Altair chart when the `format` property is not correctly applied to the `InlineData` object, as described in the issue context."
+            }
+        ]
+    },
+    {
+        "instance_id": "vega__altair-974",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a horizontal bar chart with two bars. The x-axis is labeled 'timedelta' and is divided into six equal segments, each representing a unit of time. The first bar is filled with a blue color and spans the first three segments, indicating a timedelta of three hours. The second bar, also blue, spans the entire x-axis, representing a timedelta of six hours. The y-axis is labeled 'id:O' and has a single tick mark at the bottom, suggesting a categorical scale. The chart is generated using Altair, a declarative statistical visualization library for Python, as indicated by the chart's style and structure. The image is related to a code snippet attempting to visualize a timedelta range using Altair and Pandas, which resulted in a TypeError due to the non-JSON serializability of the timedelta object."
+            }
+        ]
+    },
+    {
+        "instance_id": "vega__altair-830",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a scatter plot graph that visualizes the relationship between horsepower and miles per gallon for different car origins. The x-axis represents horsepower, ranging from 0 to 240, while the y-axis represents miles per gallon, ranging from 0 to 50. The data points are color-coded by origin: blue circles represent European cars, orange circles represent Japanese cars, and red circles represent American cars. A tooltip is visible for a data point labeled 'datsun 280-zx' with an origin of Japan. The background grid helps in identifying the exact values of each data point."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-27754",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a 3D plot with a set of arrows plotted using Matplotlib's `quiver` function. The plot has a grid background with axes labeled on the bottom and right sides. The x-axis ranges from -0.04 to 0.04, the y-axis ranges from 0 to 8, and the z-axis ranges from 1 to 10. The arrows are plotted starting from the origin (0,0,0) and extending along the y-axis. The arrows are colored using a colormap, with the arrow bodies in a gradient of red shades and the arrow heads in a lighter shade of red. The issue described in the context is that the color of the 3D arrow head does not match that of the arrow body, and the two segments of the head itself do not match."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-26926",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a grid of four subplots, each containing two lines. The top-left subplot has a blue line with a positive slope and an orange line with a negative slope. The top-right subplot also has a blue line with a positive slope and an orange line with a negative slope. The bottom-left subplot has a blue line with a positive slope and an orange line with a negative slope. The bottom-right subplot has a blue line with a positive slope and an orange line with a negative slope. The x-axis ranges from 2 to 10, and the y-axis ranges from -10 to 10. The background of the subplots is transparent, and there is no legend visible in the image."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows a grid of four subplots, each containing two lines. The top-left subplot has a blue line with a positive slope and an orange line with a negative slope. The top-right subplot also has a blue line with a positive slope and an orange line with a negative slope. The bottom-left subplot has a blue line with a positive slope and an orange line with a negative slope. The bottom-right subplot has a blue line with a positive slope and an orange line with a negative slope. The x-axis ranges from 2 to 10, and the y-axis ranges from -10 to 10. The background of the subplots is transparent, and there is a legend visible in the top-right corner of the image, indicating 'line1' and 'line2'."
+            },
+            {
+                "image_id": "3",
+                "description": "The image shows a grid of four subplots, each containing two lines. The top-left subplot has a blue line with a positive slope and an orange line with a negative slope. The top-right subplot also has a blue line with a positive slope and an orange line with a negative slope. The bottom-left subplot has a blue line with a positive slope and an orange line with a negative slope. The bottom-right subplot has a blue line with a positive slope and an orange line with a negative slope. The x-axis ranges from 2 to 10, and the y-axis ranges from -10 to 10. The background of the subplots is transparent, and there is a legend visible in the top-right corner of the image, indicating 'line1' and 'line2'. The legend is positioned on top of the subplots, making it visible."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-26788",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a polar plot with radial lines and concentric circles. The plot has a circular grid with angles marked from 0° to 360° in increments of 45°. The radial lines are labeled with values from 0 to 1 in increments of 0.2. A blue line is drawn from the center of the plot to the edge at an angle of approximately 22.5°."
+            },
+            {
+                "image_id": "2",
+                "image_description": "The image is a polar plot with radial lines and concentric circles. The plot has a circular grid with angles marked from 0° to 360° in increments of 45°. The radial lines are labeled with values from 0 to 1 in increments of 0.2. A blue line is drawn from the center of the plot to the edge at an angle of approximately 22.5°. Additionally, there are two orange concentric circles drawn at radii of approximately 0.2 and 0.4."
+            }
+        ]
+    },
+    {
+        "instance_id": "matplotlib__matplotlib-26586",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image is a scatter plot with a curved reference line and tick marks indicating correlation values from 0.0 to 1.0. The x-axis is labeled 'Standard deviation' and ranges from 0 to 1.25. The y-axis is labeled 'REF' and also ranges from 0 to 1.25. The plot contains several colored markers representing different data points, with each marker having a unique color and position. The reference line is a dashed curve that starts at the top left corner and curves downward towards the bottom right corner. The correlation values are marked along the curve, with each value corresponding to a specific point on the curve. The plot is used to demonstrate the relationship between standard deviation and correlation in a dataset."
+            }
+        ]
+    },
+    {
+        "instance_id": "sympy__sympy-26941",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a Python code snippet executed in a Jupyter notebook cell. The code imports all modules from the SymPy package and attempts to substitute a series expansion of the cosine function with itself. The execution took 405 milliseconds and completed on April 14, 2020, at 10:32:03. Below the code cell, there is a traceback of a TypeError that occurred in the SymPy package's core and series modules. The error message indicates that the zip argument #2 must support iteration. The traceback points to specific lines of code in the SymPy package where the error occurred."
+            },
+            {
+                "image_id": "2",
+                "description": "The image shows a mathematical expression in LaTeX format, which is the result of a series expansion of the sine function. The expression is x - x^3/3 + x^5/10 - 8x^7/315 + O(x^8), indicating the first few terms of the Taylor series expansion of the sine function up to the 8th order. The expression is displayed in a Jupyter notebook cell, and the execution took 89 milliseconds, completing on April 14, 2020, at 10:31:24."
+            }
+        ]
+    },
+    {
+        "instance_id": "mwaskom__seaborn-3458",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "The image shows a pair of scatter plots with the x-axis labeled 'carat' and the y-axis labeled 'price'. The plots display a large number of data points, with the points appearing in a blue color. The x-axis ranges from 0 to 5, and the y-axis ranges from 0 to 15000. The data points are densely packed in certain areas, particularly around the 1 and 2 carat marks, indicating a higher concentration of data in these regions. The plots appear to be part of a pair plot, as indicated by the similar layout and data distribution in both plots."
+            },
+            {
+                "image_id": "2",
+                "description": "This image is identical to the first image, showing the same pair of scatter plots with the x-axis labeled 'carat' and the y-axis labeled 'price'. The data points are again densely packed around the 1 and 2 carat marks, with a similar range on both axes. The plots are visually indistinguishable from the first image, suggesting that the issue described in the context does not affect the visual appearance of the plots."
+            },
+            {
+                "image_id": "3",
+                "description": "The image shows a single scatter plot with the x-axis labeled 'carat' and the y-axis labeled 'price'. The data points are displayed in a blue color, with a similar distribution pattern as seen in the previous images. The x-axis ranges from 0 to 5, and the y-axis is on a logarithmic scale, ranging from 10^3 to 10^4. The data points are densely packed around the 1 and 2 carat marks, similar to the previous plots, but the logarithmic scale on the y-axis changes the visual representation of the data."
+            }
+        ]
+    },
+    {
+        "instance_id": "mwaskom__seaborn-3454",
+        "description_list": [
+            {
+                "image_id": "1",
+                "description": "A histogram plot showing the distribution of flipper lengths for three species of penguins: Adelie, Chinstrap, and Gentoo. The x-axis represents flipper length in millimeters, ranging from 170 to 230 mm. The y-axis represents the count of penguins. Adelie penguins are represented by blue bars, Chinstrap penguins by orange bars, and Gentoo penguins by green bars. The legend is located on the right side of the plot, with the species names listed in the order: Adelie, Chinstrap, Gentoo."
+            },
+            {
+                "image_id": "2",
+                "description": "A histogram plot similar to the first image, but with the legend handles reversed. The legend now lists the species names in the order: Gentoo, Chinstrap, Adelie, which is different from the original order. The histogram bars and their colors for each species remain unchanged."
+            },
+            {
+                "image_id": "3",
+                "description": "A histogram plot identical to the second image, with the legend handles reversed again. The legend now lists the species names in the order: Adelie, Chinstrap, Gentoo, which is the original order. The histogram bars and their colors for each species remain unchanged."
+            }
+        ]
+    }
+]
